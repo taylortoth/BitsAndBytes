@@ -1,2 +1,2 @@
 # BitsAndBytesGame
-love at first byte ;)
+love at first bite ;)
