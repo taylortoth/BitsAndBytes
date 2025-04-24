@@ -1,0 +1,13 @@
+{
+  "_resourceType": "background",
+  "id": "262fbbeb-e065-4267-a058-e99524243cbc",
+  "name": "castleinterior2",
+  "symbol": "bg_castleinterior2",
+  "width": 32,
+  "height": 32,
+  "imageWidth": 256,
+  "imageHeight": 256,
+  "filename": "castleinterior2.png",
+  "tileColors": "",
+  "autoColor": false
+}

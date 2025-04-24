@@ -1,0 +1,13 @@
+{
+  "_resourceType": "background",
+  "id": "9713089c-d463-47c2-88d4-c2f19b9f855f",
+  "name": "LATBforrest",
+  "symbol": "bg_latbforrest",
+  "width": 60,
+  "height": 20,
+  "imageWidth": 480,
+  "imageHeight": 160,
+  "filename": "LATBforrest.png",
+  "tileColors": "",
+  "autoColor": false
+}

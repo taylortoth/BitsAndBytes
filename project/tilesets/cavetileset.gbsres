@@ -1,0 +1,11 @@
+{
+  "_resourceType": "tileset",
+  "id": "e075e657-c821-47b4-8969-d22289e6f5cf",
+  "name": "cavetileset",
+  "symbol": "tileset_complete_tileset",
+  "width": 30,
+  "height": 24,
+  "imageWidth": 240,
+  "imageHeight": 192,
+  "filename": "cavetileset.png"
+}

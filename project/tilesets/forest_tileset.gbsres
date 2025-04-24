@@ -1,0 +1,11 @@
+{
+  "_resourceType": "tileset",
+  "id": "70e02f56-ad6a-4e06-aca3-c61e4fc453a7",
+  "name": "forest_tileset",
+  "symbol": "tileset_rpg_exterior",
+  "width": 24,
+  "height": 17,
+  "imageWidth": 192,
+  "imageHeight": 136,
+  "filename": "forest_tileset.png"
+}

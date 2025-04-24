@@ -1,0 +1,23 @@
+{
+  "_resourceType": "scene",
+  "id": "fc327a10-0d21-4ef5-b6b2-9458ccc6f835",
+  "_index": 2,
+  "name": "Scene 3",
+  "backgroundId": "9713089c-d463-47c2-88d4-c2f19b9f855f",
+  "tilesetId": "",
+  "width": 60,
+  "height": 20,
+  "type": "TOPDOWN",
+  "paletteIds": [],
+  "spritePaletteIds": [],
+  "collisions": "009+0f!003b+0f!003b+0f!001e+0f4+00e+0f2+005+0f5+001e+0f!002+0f!00e+0f!006+0f!0022+0f!002+0f5+00a+0f!006+0f!0022+0f!006+0f!00a+0f!006+0f!001e+0f5+006+0f!008+0f3+002+0f5+001e+0f!00a+0f!008+0f!004+0f!0022+0f!00a+0f!008+0f!004+0f!0022+0f!00a+0f!008+0f!004+0f3+0020+0f!00a+0f!008+0f!006+0f!0020+0f5+006+0f!008+0f3+004+0f!0012+0f4+00e+0f!006+0f!00a+0f!004+0f!0012+0f!002+0f!00e+0f!002+0f5+00a+0f2+003+0f5+00a+0f5+002+0f5+00a+0f!002+0f!0017+0f!00a+0f!00a+0f!00a+0f4+0017+0f!00a+0f!00a+0f!004+0f2+0010+0f4+00b+0f!00a+0f!00a+0f!004+0f2+0010+0f!002+0f!00b+0f!00a+0f!00a+0f!0012+0f5+002+0f!00b+0f!00a+0f!00a+0f!0012+0f!006+0f!004+",
+  "autoFadeSpeed": 1,
+  "symbol": "scene_3",
+  "x": 176,
+  "y": 72,
+  "script": [],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "playerSpriteSheetId": "f6b93f38-1d82-4083-9b69-f1cda055c471"
+}
