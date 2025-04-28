@@ -15,7 +15,36 @@
   "collisionGroup": "",
   "prefabScriptOverrides": {},
   "symbol": "actor_1",
-  "script": [],
+  "script": [
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Oh?\nA new face... \nand such a lively\none at that.",
+          "How delightful.\nThis town could \nuse a little fresh\nblood.",
+          "I'm Carmilla, \ndarling.Tell me...",
+          "Are you here \nlooking for \ntrouble? Or has \ntrouble already \nfound you?"
+        ],
+        "__section": "text",
+        "avatarId": "",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "625c81da-f99c-4f8a-96ad-cf1d038c70ee"
+    }
+  ],
   "startScript": [],
   "updateScript": [],
   "hit1Script": [],
