@@ -12,10 +12,25 @@
   "paletteId": "",
   "isPinned": false,
   "persistent": false,
-  "collisionGroup": "",
+  "collisionGroup": "1",
   "prefabScriptOverrides": {},
   "symbol": "actor_6",
-  "script": [],
+  "script": [
+    {
+      "command": "EVENT_ACTOR_DEACTIVATE",
+      "args": {
+        "actorId": "0895b625-0133-47dc-83a1-31831b9cf56b"
+      },
+      "id": "a4f5ef1b-85d7-4b9f-82bd-c5a6df95f75a"
+    },
+    {
+      "command": "EVENT_INC_VALUE",
+      "args": {
+        "variable": "0"
+      },
+      "id": "30f8c2a4-03fd-4d2e-bb6a-b61f677f6b71"
+    }
+  ],
   "startScript": [],
   "updateScript": [],
   "hit1Script": [],

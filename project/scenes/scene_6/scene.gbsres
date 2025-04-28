@@ -10,12 +10,53 @@
   "type": "TOPDOWN",
   "paletteIds": [],
   "spritePaletteIds": [],
-  "collisions": "00f0+0f25+002f+0f!002f+0f!00b+0f9+002+0f1a+004+0f7+008+0f!002+0f!0018+0f6+00e+0f!002+0f!002c+0f!002+0f!0024+0f6+102+0f!002+0f6+0015+102+00e+102+0f!002+0f!004+0f!005+0f10+102+0fe+102+0f!002+0f7+004+0f!00f+102+0019+0f!003+0f11+102+0f8+0011+0f!003+0f!0010+102+0010+0f!004+0f2+002+0f5+001c+0f2+008+0f3+0023+0f2+008+0f!001f+0f!003+0f16+0016+0f!0018+0f!0010+0f!00c+0fd+005+0f!001d+0f!00b+0f!005+0f5+0019+0fe+004+0f5+00c+0f3+00a+0f!00c+0f!004+0f3+00e+0f3+00a+0f!00c+0f6+0016+0f4+003+0fb+0011+0f4+009+0f!0010+0f!00f+0f6+009+0f!0010+0f9+007+0f2+00d+0f!0018+0f!0016+0f!0018+0f!0013+0f4+0018+0f!0013+0f!001b+0f!0013+0f!001b+0f3+0011+0f!006+0f18+0011+0f!001b+0f!00d+0f!005+0f!001b+0f!004+0f!00e+0f!001b+0f!003+0f!00f+0f!001b+0f!003+0f!00f+0f!001b+0f!0013+0f!001b+0f!0013+0f!001b+0f!00e+0f!004+0f!001b+0f!00e+0f!004+0f!001b+0f!00d+0f2+00b+0f23+009d+",
+  "collisions": "00f0+0f25+002f+0f!002f+0f!00b+0f9+002+0f1a+004+0f7+008+0f!002+0f!0018+0f6+00e+0f!002+0f!002c+0f!002+0f!0024+0f6+102+0f!002+0f6+0015+102+00e+102+0f!002+0f!004+0f!005+0f10+102+0fe+102+0f!002+0f7+004+0f!00f+102+0019+0f!003+0f11+102+0f8+0011+0f!003+0f!0010+102+0010+0f!004+0f2+002+0f5+001c+0f2+008+0f3+0023+0f2+008+0f!001f+0f!003+0f16+0016+0f!0018+0f!0010+0f!00c+0fd+005+0f!001d+0f!00b+0f!005+0f5+0019+0fe+004+0f5+00c+0f3+00a+0f!00c+0f!004+0f3+00e+0f3+00a+0f!00c+0f6+0016+0f4+003+0fb+0011+0f4+009+0f!0010+0f!00f+0f6+009+0f!0010+0f9+007+0f2+00d+0f!0018+0f!0016+0f!0018+0f!0013+0f4+0018+0f!0013+0f!001b+0f!0013+0f!001b+0f3+0011+0f!006+0f18+0011+0f!001b+0f!00d+0f!005+0f!001b+0f!004+0f!00e+0f!001b+0f!003+0f!00f+0f!001b+0f!003+0f!00f+0f!001b+0f!0013+0f!001b+0f!0013+0f!001b+0f!00e+0f!004+0f!001b+0f!00e+0f!004+0f!001b+0f!007+0f!005+0f2+00b+0f23+009d+",
   "autoFadeSpeed": 1,
   "symbol": "scene_6",
   "x": 848,
   "y": 624,
-  "script": [],
+  "script": [
+    {
+      "command": "EVENT_SET_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "start"
+        ],
+        "override": true,
+        "__scriptTabs": "press"
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Blood bottles : $00$"
+              ],
+              "__section": "text",
+              "avatarId": "",
+              "minHeight": 4,
+              "maxHeight": 7,
+              "textX": 1,
+              "textY": 1,
+              "textHeight": 5,
+              "position": "bottom",
+              "clearPrevious": true,
+              "showFrame": "true",
+              "speedIn": 0,
+              "speedOut": 0,
+              "closeWhen": "key",
+              "closeButton": "any",
+              "closeDelayTime": 0.5,
+              "closeDelayFrames": 30
+            },
+            "id": "41bc8f63-fc33-46d1-be3b-0cbced6dc5c6"
+          }
+        ]
+      },
+      "id": "9c7c6f85-1034-4eab-9966-15c940dfe5b4"
+    }
+  ],
   "playerHit1Script": [],
   "playerHit2Script": [],
   "playerHit3Script": [],

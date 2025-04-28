@@ -3,19 +3,60 @@
   "id": "4bda203f-56c7-49c7-833d-d5c765a41d37",
   "_index": 3,
   "name": "Scene 4",
-  "backgroundId": "6357b70d-c6de-4648-81d0-b12edb95d9d2",
+  "backgroundId": "52b170b4-0c44-4b4a-8f1f-b93bbe82a542",
   "tilesetId": "",
-  "width": 33,
-  "height": 23,
+  "width": 60,
+  "height": 60,
   "type": "TOPDOWN",
   "paletteIds": [],
   "spritePaletteIds": [],
-  "collisions": "",
+  "collisions": "003d4+0f2+002+0f2+00c+0f2+002+0f2+0024+0f2+002+0f2+00c+0f2+002+0f2+0018+0f6+006+0f6+002+0f2+004+0f2+002+0f6+006+0f6+00c+0f!004+0f2+005+0f!004+0f!002+0f2+004+0f2+002+0f!004+0f!006+0f!004+0f!00c+0f!004+0f8+004+0f!002+0f8+002+0f!004+0f8+004+0f!00c+0f!0010+0f!002+0f!006+0f!002+0f!0010+0f!00c+0f!0010+0f4+006+0f4+0010+0f!00c+0f!002e+0f!00c+0f!002e+0f!00c+0f!002e+0f!00c+0f!002e+0f!00c+0f7+0022+0f7+0012+0f!0022+0f!0018+0f!0022+0f!0018+0f!0022+0f!0018+0f!0022+0f!0018+0f!0022+0f!0018+0f7+0016+0f7+001e+0f!0016+0f!0024+0f!0016+0f!0024+0f!0016+0f!0024+0f!0016+0f!0024+0f!0016+0f!0024+0f6+004+0f4+004+0f6+004c0+",
   "autoFadeSpeed": 1,
   "symbol": "scene_4",
-  "x": 296,
-  "y": 768,
-  "script": [],
+  "x": 264,
+  "y": 944,
+  "script": [
+    {
+      "command": "EVENT_SET_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "start"
+        ],
+        "override": true,
+        "__scriptTabs": "press"
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Blood bottles : $00$"
+              ],
+              "__section": "text",
+              "avatarId": "",
+              "minHeight": 4,
+              "maxHeight": 7,
+              "textX": 1,
+              "textY": 1,
+              "textHeight": 5,
+              "position": "bottom",
+              "clearPrevious": true,
+              "showFrame": "true",
+              "speedIn": 0,
+              "speedOut": 0,
+              "closeWhen": "key",
+              "closeButton": "any",
+              "closeDelayTime": 0.5,
+              "closeDelayFrames": 30
+            },
+            "id": "206d8149-1df6-445d-a226-077cc9a50590"
+          }
+        ]
+      },
+      "id": "a1618ebb-653c-4c57-886a-60b440f0c5ba"
+    }
+  ],
   "playerHit1Script": [],
   "playerHit2Script": [],
   "playerHit3Script": [],
