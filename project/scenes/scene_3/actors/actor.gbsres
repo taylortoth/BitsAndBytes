@@ -77,8 +77,8 @@
                         "value": 1
                       }
                     },
-                    "__collapseElse": true,
-                    "__collapse": true
+                    "__collapseElse": false,
+                    "__collapse": false
                   },
                   "children": {
                     "true": [
@@ -135,7 +135,7 @@
                               "value": 2
                             }
                           },
-                          "__collapseElse": true,
+                          "__collapseElse": false,
                           "__collapse": false
                         },
                         "children": {
@@ -224,7 +224,7 @@
                                       "closeButton": "a",
                                       "closeDelayTime": 0.5,
                                       "closeDelayFrames": 30,
-                                      "__collapse": false
+                                      "__collapse": true
                                     },
                                     "id": "cb4eeaa2-b92d-4075-99db-4c6ba3deb6a5"
                                   },
