@@ -78,7 +78,7 @@
                       }
                     },
                     "__collapseElse": true,
-                    "__collapse": false
+                    "__collapse": true
                   },
                   "children": {
                     "true": [
@@ -135,7 +135,7 @@
                               "value": 2
                             }
                           },
-                          "__collapseElse": false,
+                          "__collapseElse": true,
                           "__collapse": false
                         },
                         "children": {
@@ -195,7 +195,7 @@
                                     "value": 3
                                   }
                                 },
-                                "__collapseElse": false,
+                                "__collapseElse": true,
                                 "__collapse": false
                               },
                               "children": {
@@ -224,7 +224,7 @@
                                       "closeButton": "a",
                                       "closeDelayTime": 0.5,
                                       "closeDelayFrames": 30,
-                                      "__collapse": true
+                                      "__collapse": false
                                     },
                                     "id": "cb4eeaa2-b92d-4075-99db-4c6ba3deb6a5"
                                   },
@@ -458,8 +458,8 @@
                               "value": 1
                             }
                           },
-                          "__collapseElse": false,
-                          "__collapse": true
+                          "__collapseElse": true,
+                          "__collapse": false
                         },
                         "children": {
                           "true": [
@@ -467,7 +467,8 @@
                               "command": "EVENT_TEXT",
                               "args": {
                                 "text": [
-                                  "thanks for the \nfirst bottle"
+                                  "...You're brave. \nOr foolish.",
+                                  "Either way...\nthank you."
                                 ],
                                 "__section": "text",
                                 "avatarId": "",
@@ -487,7 +488,7 @@
                                 "closeDelayFrames": 30,
                                 "__collapse": true
                               },
-                              "id": "ce8f939a-2229-44df-aec9-88520bcfe61c"
+                              "id": "eda27711-682d-4050-9f18-44b30e4607c5"
                             },
                             {
                               "command": "EVENT_ACTOR_SET_STATE",
@@ -515,7 +516,7 @@
                                     "value": 2
                                   }
                                 },
-                                "__collapseElse": false,
+                                "__collapseElse": true,
                                 "__collapse": false
                               },
                               "children": {
@@ -524,7 +525,10 @@
                                     "command": "EVENT_TEXT",
                                     "args": {
                                       "text": [
-                                        "another bottle!"
+                                        "Most wouldn't offer\ngifts to something\nthey fear.",
+                                        "Maybe you're\ndifferent...",
+                                        "...",
+                                        "I hope you are."
                                       ],
                                       "__section": "text",
                                       "avatarId": "",
@@ -572,7 +576,7 @@
                                           "value": 3
                                         }
                                       },
-                                      "__collapseElse": false,
+                                      "__collapseElse": true,
                                       "__collapse": false
                                     },
                                     "children": {
@@ -581,7 +585,9 @@
                                           "command": "EVENT_TEXT",
                                           "args": {
                                             "text": [
-                                              "3 bottles"
+                                              "I find myself...\nwaiting to see you\nagain.",
+                                              "Not that it\nmatters.",
+                                              "I just... notice."
                                             ],
                                             "__section": "text",
                                             "avatarId": "",
@@ -599,7 +605,7 @@
                                             "closeButton": "a",
                                             "closeDelayTime": 0.5,
                                             "closeDelayFrames": 30,
-                                            "__collapse": true
+                                            "__collapse": false
                                           },
                                           "id": "d20890d0-cb29-434a-b815-ac5bb1a715e0"
                                         },
@@ -638,7 +644,9 @@
                                                 "command": "EVENT_TEXT",
                                                 "args": {
                                                   "text": [
-                                                    "4 bottles"
+                                                    "You shouldn't \ntrust creatures \nlike me.",
+                                                    "We... I...\ndon't deserve it.",
+                                                    "But I'm glad you\ndo."
                                                   ],
                                                   "__section": "text",
                                                   "avatarId": "",
@@ -656,7 +664,7 @@
                                                   "closeButton": "a",
                                                   "closeDelayTime": 0.5,
                                                   "closeDelayFrames": 30,
-                                                  "__collapse": true
+                                                  "__collapse": false
                                                 },
                                                 "id": "f5585e03-0b75-4ec8-b908-767f2ce522eb"
                                               },

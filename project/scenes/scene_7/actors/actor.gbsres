@@ -17,33 +17,190 @@
   "symbol": "actor_3",
   "script": [
     {
-      "command": "EVENT_TEXT",
+      "command": "EVENT_IF",
       "args": {
-        "text": [
-          "Another stranger..\nI wonder what \ndraws you here.",
-          "This town is not \nwhat it seems.",
-          "Danger often walks\nhand-in-hand with\nbeauty.",
-          "I am Alucard.\nIf you intend to \nstay... ",
-          "be certain\nof where your\nloyalties lie."
-        ],
-        "__section": "text",
-        "avatarId": "",
-        "minHeight": 4,
-        "maxHeight": 7,
-        "textX": 1,
-        "textY": 1,
-        "textHeight": 5,
-        "position": "bottom",
-        "clearPrevious": true,
-        "showFrame": "true",
-        "speedIn": 0,
-        "speedOut": 0,
-        "closeWhen": "key",
-        "closeButton": "any",
-        "closeDelayTime": 0.5,
-        "closeDelayFrames": 30
+        "condition": {
+          "type": "variable",
+          "value": "7"
+        },
+        "__collapseElse": true
       },
-      "id": "098aba33-41db-4c35-9e48-8f526b480d4d"
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "condition": {
+                "type": "gt",
+                "valueA": {
+                  "type": "variable",
+                  "value": "0"
+                },
+                "valueB": {
+                  "type": "number",
+                  "value": 0
+                }
+              },
+              "__collapseElse": false
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_DEC_VALUE",
+                  "args": {
+                    "variable": "0",
+                    "__collapse": true
+                  },
+                  "id": "0efb7a80-d4e4-416b-b321-04824bfa05e6"
+                },
+                {
+                  "command": "EVENT_INC_VALUE",
+                  "args": {
+                    "variable": "4",
+                    "__collapse": true
+                  },
+                  "id": "dbcedace-9648-422f-b542-593cc67ab37f"
+                }
+              ],
+              "false": [
+                {
+                  "command": "EVENT_IF",
+                  "args": {
+                    "condition": {
+                      "type": "eq",
+                      "valueA": {
+                        "type": "variable",
+                        "value": "4"
+                      },
+                      "valueB": {
+                        "type": "number",
+                        "value": 0
+                      }
+                    },
+                    "__collapseElse": true
+                  },
+                  "children": {
+                    "true": [
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "You walk these \ngrounds without\nfear.",
+                            "I wonder how long\nthat will last..."
+                          ],
+                          "__section": "text",
+                          "avatarId": "",
+                          "minHeight": 4,
+                          "maxHeight": 7,
+                          "textX": 1,
+                          "textY": 1,
+                          "textHeight": 5,
+                          "position": "bottom",
+                          "clearPrevious": true,
+                          "showFrame": "true",
+                          "speedIn": -1,
+                          "speedOut": -1,
+                          "closeWhen": "key",
+                          "closeButton": "a",
+                          "closeDelayTime": 0.5,
+                          "closeDelayFrames": 30,
+                          "__collapse": true
+                        },
+                        "id": "8057ac76-d6e8-4ae4-aaae-b85b0f7d3cc2"
+                      },
+                      {
+                        "command": "EVENT_ACTOR_SET_STATE",
+                        "args": {
+                          "actorId": "$self$",
+                          "spriteStateId": "",
+                          "loopAnim": true
+                        },
+                        "id": "a1a5eb93-d74f-41b5-a415-f5e6d452d850"
+                      }
+                    ],
+                    "false": []
+                  },
+                  "id": "c68db199-c632-448f-a5e7-fa0b256bd606"
+                }
+              ]
+            },
+            "id": "ac209b05-ca6d-4d0c-8836-e55b5c788907"
+          }
+        ],
+        "false": []
+      },
+      "id": "05e84d51-3a89-49d0-8be0-b65d099599ec"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "not",
+          "value": {
+            "type": "variable",
+            "value": "7"
+          }
+        },
+        "__collapseElse": true,
+        "__collapse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Another stranger..\nI wonder what \ndraws you here.",
+                "This town is not \nwhat it seems.",
+                "Danger often walks\nhand-in-hand with\nbeauty.",
+                "I am Alucard.\nIf you intend to \nstay... ",
+                "be certain\nof where your\nloyalties lie."
+              ],
+              "__section": "text",
+              "avatarId": "",
+              "minHeight": 4,
+              "maxHeight": 7,
+              "textX": 1,
+              "textY": 1,
+              "textHeight": 5,
+              "position": "bottom",
+              "clearPrevious": true,
+              "showFrame": "true",
+              "speedIn": 0,
+              "speedOut": 0,
+              "closeWhen": "key",
+              "closeButton": "any",
+              "closeDelayTime": 0.5,
+              "closeDelayFrames": 30,
+              "__collapse": false
+            },
+            "id": "098aba33-41db-4c35-9e48-8f526b480d4d"
+          },
+          {
+            "command": "EVENT_ACTOR_SET_STATE",
+            "args": {
+              "actorId": "$self$",
+              "spriteStateId": "",
+              "loopAnim": true,
+              "__collapse": true
+            },
+            "id": "b7068452-6326-472b-8021-d5fffde0494c"
+          },
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "7",
+              "value": {
+                "type": "true"
+              },
+              "__collapse": true
+            },
+            "id": "b7572d6f-af1c-466e-8260-b48beaf51acc"
+          }
+        ],
+        "false": []
+      },
+      "id": "e68b0f99-b303-4356-967a-fa6ccc8c5789"
     }
   ],
   "startScript": [],
