@@ -15,7 +15,37 @@
   "collisionGroup": "",
   "prefabScriptOverrides": {},
   "symbol": "actor_0",
-  "script": [],
+  "script": [
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "...You're not \nfrom around here, \nare you?",
+          "It's dangerous to \nwalk these streets \nalone. ",
+          "Especially for \nsomeone... so\nfull of life.",
+          "I'm Edward. If you\ninsist on staying,\nbe careful who you\ntrust.",
+          "Some of us aren't\nas harmless as we\nlook."
+        ],
+        "__section": "text",
+        "avatarId": "",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "7e1f0321-4e39-4769-8df6-266c9c6c5fc7"
+    }
+  ],
   "startScript": [],
   "updateScript": [],
   "hit1Script": [],
