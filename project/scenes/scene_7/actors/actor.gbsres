@@ -76,7 +76,7 @@
                       }
                     },
                     "__collapseElse": false,
-                    "__collapse": false
+                    "__collapse": true
                   },
                   "children": {
                     "true": [
@@ -84,7 +84,7 @@
                         "command": "EVENT_TEXT",
                         "args": {
                           "text": [
-                            "A token freely\ngiven...",
+                            "Blood, freely\ngiven...",
                             "Rare, in these\ntimes.",
                             "You have earned\nmy gratitude."
                           ],
@@ -200,9 +200,9 @@
                                     "command": "EVENT_TEXT",
                                     "args": {
                                       "text": [
-                                        "I have fought\ncountless battles.",
-                                        "Yet, this quiet\nloyalty...",
-                                        "humbles me."
+                                        "In a world where\nblood is taken by\nforce...",
+                                        "You offer it \nfreely.",
+                                        "And that humbles\nme."
                                       ],
                                       "__section": "text",
                                       "avatarId": "",
@@ -259,7 +259,8 @@
                                           "command": "EVENT_TEXT",
                                           "args": {
                                             "text": [
-                                              "You have stood\nbeside me without\nfear or demand.",
+                                              "Your every\noffering of blood,",
+                                              "a reminder that\nloyalty need not\nbe bought by fear.",
                                               "Know that I would\nstand for you just\nas strongly."
                                             ],
                                             "__section": "text",
@@ -309,7 +310,7 @@
                                               }
                                             },
                                             "__collapseElse": true,
-                                            "__collapse": false
+                                            "__collapse": true
                                           },
                                           "children": {
                                             "true": [
@@ -338,7 +339,7 @@
                                                   "closeButton": "a",
                                                   "closeDelayTime": 0.5,
                                                   "closeDelayFrames": 30,
-                                                  "__collapse": true
+                                                  "__collapse": false
                                                 },
                                                 "id": "7459f81e-0d25-42ca-82b3-690336a3af38"
                                               },
@@ -365,8 +366,8 @@
                                                     "value": 0
                                                   },
                                                   "direction": "",
-                                                  "fadeSpeed": "2",
-                                                  "__collapse": true
+                                                  "fadeSpeed": 4,
+                                                  "__collapse": false
                                                 },
                                                 "id": "21c6df7e-6caa-470f-8291-6676c5fb0ba6"
                                               }
@@ -407,7 +408,8 @@
                         "value": 0
                       }
                     },
-                    "__collapseElse": false
+                    "__collapseElse": false,
+                    "__collapse": false
                   },
                   "children": {
                     "true": [
@@ -473,7 +475,7 @@
                               "command": "EVENT_TEXT",
                               "args": {
                                 "text": [
-                                  "A token freely\ngiven...",
+                                  "Blood, freely\ngiven...",
                                   "Rare, in these\ntimes.",
                                   "You have earned\nmy gratitude."
                                 ],
@@ -495,7 +497,7 @@
                                 "closeDelayFrames": 30,
                                 "__collapse": true
                               },
-                              "id": "7d6e85d7-5ce4-45ab-970c-04d688660feb"
+                              "id": "43da2b3c-4ee8-4221-8f04-7f799ac41a97"
                             },
                             {
                               "command": "EVENT_ACTOR_SET_STATE",
@@ -505,7 +507,7 @@
                                 "loopAnim": true,
                                 "__collapse": true
                               },
-                              "id": "5c76ee39-0659-4724-a724-3d1d48835a40"
+                              "id": "cbe9778d-b610-4032-a30d-1ab5951f3a8a"
                             }
                           ],
                           "false": [
@@ -553,7 +555,7 @@
                                       "closeDelayFrames": 30,
                                       "__collapse": true
                                     },
-                                    "id": "b0507dd3-238c-4758-b1fc-2ce1cc8308e2"
+                                    "id": "d205d5fd-fc2e-4849-9130-95e125f44f0b"
                                   },
                                   {
                                     "command": "EVENT_ACTOR_SET_STATE",
@@ -563,7 +565,7 @@
                                       "loopAnim": true,
                                       "__collapse": true
                                     },
-                                    "id": "202e23c9-9c75-4e09-9360-d01514a9d2f1"
+                                    "id": "f4f5f1a0-694c-44d8-9bf3-efc8dabc3a38"
                                   }
                                 ],
                                 "false": [
@@ -589,9 +591,9 @@
                                           "command": "EVENT_TEXT",
                                           "args": {
                                             "text": [
-                                              "I have fought\ncountless battles.",
-                                              "Yet, this quiet\nloyalty...",
-                                              "humbles me."
+                                              "In a world where\nblood is taken by\nforce...",
+                                              "You offer it \nfreely.",
+                                              "And that humbles\nme."
                                             ],
                                             "__section": "text",
                                             "avatarId": "",
@@ -611,7 +613,7 @@
                                             "closeDelayFrames": 30,
                                             "__collapse": true
                                           },
-                                          "id": "81a344ba-4355-4c41-82ab-c0893900cf94"
+                                          "id": "708c32b0-8371-4389-b8c2-fe3f2e5a1da0"
                                         },
                                         {
                                           "command": "EVENT_ACTOR_SET_STATE",
@@ -621,7 +623,7 @@
                                             "loopAnim": true,
                                             "__collapse": true
                                           },
-                                          "id": "fb0f9288-03bb-44d5-88d1-b3764a1c2fa5"
+                                          "id": "c8a32a3d-afb4-4a2c-bb92-310a7409bd88"
                                         }
                                       ],
                                       "false": [
@@ -648,7 +650,8 @@
                                                 "command": "EVENT_TEXT",
                                                 "args": {
                                                   "text": [
-                                                    "You have stood\nbeside me without\nfear or demand.",
+                                                    "Your every\noffering of blood,",
+                                                    "a reminder that\nloyalty need not\nbe bought by fear.",
                                                     "Know that I would\nstand for you just\nas strongly."
                                                   ],
                                                   "__section": "text",
@@ -669,7 +672,7 @@
                                                   "closeDelayFrames": 30,
                                                   "__collapse": true
                                                 },
-                                                "id": "afe58bc4-b088-497e-8efe-e9c928a17f91"
+                                                "id": "f8d801e8-68f9-42d9-9b5e-285d8addf0ef"
                                               },
                                               {
                                                 "command": "EVENT_ACTOR_SET_STATE",
@@ -679,24 +682,24 @@
                                                   "loopAnim": true,
                                                   "__collapse": true
                                                 },
-                                                "id": "83b1f45d-c68e-4849-9dde-8259f41c6892"
+                                                "id": "c909bb0d-5185-4ada-8a4e-db8b16dd4346"
                                               }
                                             ],
                                             "false": []
                                           },
-                                          "id": "cc2de43f-a5b2-4603-b3d9-d88124d7bb7b"
+                                          "id": "5f5c5b96-a1dd-4956-a36f-c6a85a0f5582"
                                         }
                                       ]
                                     },
-                                    "id": "69b9603d-05b0-417e-921f-4a82e4a4cb64"
+                                    "id": "79d97c99-0469-43ac-b239-836aa9a4d954"
                                   }
                                 ]
                               },
-                              "id": "cd373587-4e0c-4429-a3fe-c038756ca8c3"
+                              "id": "bd535ce9-1549-445d-8ae4-4372cdb8dc72"
                             }
                           ]
                         },
-                        "id": "4254135a-afd1-438b-82f3-8232065609f5"
+                        "id": "f8f40b7c-421d-415e-9921-803d9fca0296"
                       }
                     ]
                   },

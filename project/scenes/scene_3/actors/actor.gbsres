@@ -78,7 +78,7 @@
                       }
                     },
                     "__collapseElse": false,
-                    "__collapse": false
+                    "__collapse": true
                   },
                   "children": {
                     "true": [
@@ -86,7 +86,7 @@
                         "command": "EVENT_TEXT",
                         "args": {
                           "text": [
-                            "...You're brave. \nOr foolish.",
+                            "A bottle of blood.\nBrave... or\nfoolish.",
                             "Either way...\nthank you."
                           ],
                           "__section": "text",
@@ -105,7 +105,7 @@
                           "closeButton": "a",
                           "closeDelayTime": 0.5,
                           "closeDelayFrames": 30,
-                          "__collapse": true
+                          "__collapse": false
                         },
                         "id": "9ccab5e7-4c9c-4fa2-9a46-7d188f4251f2"
                       },
@@ -144,7 +144,7 @@
                               "command": "EVENT_TEXT",
                               "args": {
                                 "text": [
-                                  "Most wouldn't offer\ngifts to something\nthey fear.",
+                                  "Most wouldn't give\nblood to something\nthey fear.",
                                   "Maybe you're\ndifferent...",
                                   "...",
                                   "I hope you are."
@@ -165,7 +165,7 @@
                                 "closeButton": "a",
                                 "closeDelayTime": 0.5,
                                 "closeDelayFrames": 30,
-                                "__collapse": true
+                                "__collapse": false
                               },
                               "id": "2a2aee99-71fe-400b-9ffd-13ff7bb43429"
                             },
@@ -195,7 +195,7 @@
                                     "value": 3
                                   }
                                 },
-                                "__collapseElse": true,
+                                "__collapseElse": false,
                                 "__collapse": false
                               },
                               "children": {
@@ -205,8 +205,8 @@
                                     "args": {
                                       "text": [
                                         "I find myself...\nwaiting to see \nyou again.",
-                                        "Not that it \nmatters.",
-                                        "I just... notice."
+                                        "Not for the\nblood...",
+                                        "For you."
                                       ],
                                       "__section": "text",
                                       "avatarId": "",
@@ -224,7 +224,7 @@
                                       "closeButton": "a",
                                       "closeDelayTime": 0.5,
                                       "closeDelayFrames": 30,
-                                      "__collapse": true
+                                      "__collapse": false
                                     },
                                     "id": "cb4eeaa2-b92d-4075-99db-4c6ba3deb6a5"
                                   },
@@ -322,7 +322,7 @@
                                                 "command": "EVENT_TEXT",
                                                 "args": {
                                                   "text": [
-                                                    "Five gifts...\nfive chances you \ngave me.",
+                                                    "Five bottles...\nfive chances you \ngave me.",
                                                     "Stay with me.",
                                                     "Not just tonight,\nbut always."
                                                   ],
@@ -359,7 +359,7 @@
                                                     "value": 0
                                                   },
                                                   "direction": "",
-                                                  "fadeSpeed": 6
+                                                  "fadeSpeed": 4
                                                 },
                                                 "id": "cce7e3e0-df94-4627-997d-f62a8872ffbf"
                                               }
@@ -400,7 +400,7 @@
                         "value": 0
                       }
                     },
-                    "__collapseElse": true,
+                    "__collapseElse": false,
                     "__collapse": false
                   },
                   "children": {
@@ -458,7 +458,7 @@
                               "value": 1
                             }
                           },
-                          "__collapseElse": true,
+                          "__collapseElse": false,
                           "__collapse": false
                         },
                         "children": {
@@ -467,7 +467,7 @@
                               "command": "EVENT_TEXT",
                               "args": {
                                 "text": [
-                                  "...You're brave. \nOr foolish.",
+                                  "A bottle of blood.\nBrave... or\nfoolish.",
                                   "Either way...\nthank you."
                                 ],
                                 "__section": "text",
@@ -486,9 +486,9 @@
                                 "closeButton": "a",
                                 "closeDelayTime": 0.5,
                                 "closeDelayFrames": 30,
-                                "__collapse": true
+                                "__collapse": false
                               },
-                              "id": "eda27711-682d-4050-9f18-44b30e4607c5"
+                              "id": "fa7cf943-e607-4445-bfd4-9520e8701796"
                             },
                             {
                               "command": "EVENT_ACTOR_SET_STATE",
@@ -498,7 +498,7 @@
                                 "loopAnim": true,
                                 "__collapse": true
                               },
-                              "id": "23387ec8-885d-402f-a473-fd99405afa6d"
+                              "id": "c55ce2ce-9aec-45a8-b56d-a47fc863d71d"
                             }
                           ],
                           "false": [
@@ -516,7 +516,7 @@
                                     "value": 2
                                   }
                                 },
-                                "__collapseElse": true,
+                                "__collapseElse": false,
                                 "__collapse": false
                               },
                               "children": {
@@ -525,7 +525,7 @@
                                     "command": "EVENT_TEXT",
                                     "args": {
                                       "text": [
-                                        "Most wouldn't offer\ngifts to something\nthey fear.",
+                                        "Most wouldn't give\nblood to something\nthey fear.",
                                         "Maybe you're\ndifferent...",
                                         "...",
                                         "I hope you are."
@@ -548,7 +548,7 @@
                                       "closeDelayFrames": 30,
                                       "__collapse": true
                                     },
-                                    "id": "f6db5554-9afd-48bb-98d0-41c007a939b8"
+                                    "id": "72a81720-fffe-4cad-aaad-a4f7e53a16b3"
                                   },
                                   {
                                     "command": "EVENT_ACTOR_SET_STATE",
@@ -558,7 +558,7 @@
                                       "loopAnim": true,
                                       "__collapse": true
                                     },
-                                    "id": "df0be2dd-5149-4d4e-9d19-911d5d40f0c3"
+                                    "id": "6503a74e-eb75-48cf-8b3f-c6beeeef1802"
                                   }
                                 ],
                                 "false": [
@@ -576,7 +576,7 @@
                                           "value": 3
                                         }
                                       },
-                                      "__collapseElse": true,
+                                      "__collapseElse": false,
                                       "__collapse": false
                                     },
                                     "children": {
@@ -585,9 +585,9 @@
                                           "command": "EVENT_TEXT",
                                           "args": {
                                             "text": [
-                                              "I find myself...\nwaiting to see you\nagain.",
-                                              "Not that it\nmatters.",
-                                              "I just... notice."
+                                              "I find myself...\nwaiting to see \nyou again.",
+                                              "Not for the\nblood...",
+                                              "For you."
                                             ],
                                             "__section": "text",
                                             "avatarId": "",
@@ -607,7 +607,7 @@
                                             "closeDelayFrames": 30,
                                             "__collapse": false
                                           },
-                                          "id": "d20890d0-cb29-434a-b815-ac5bb1a715e0"
+                                          "id": "75c4eefb-f6a3-4a46-b46d-ab188584cf60"
                                         },
                                         {
                                           "command": "EVENT_ACTOR_SET_STATE",
@@ -617,7 +617,7 @@
                                             "loopAnim": true,
                                             "__collapse": true
                                           },
-                                          "id": "f5960b79-0111-404d-b359-3f50539dd718"
+                                          "id": "c10c8e87-0b83-4863-9484-503e1ca167c8"
                                         }
                                       ],
                                       "false": [
@@ -635,7 +635,7 @@
                                                 "value": 4
                                               }
                                             },
-                                            "__collapseElse": true,
+                                            "__collapseElse": false,
                                             "__collapse": false
                                           },
                                           "children": {
@@ -644,9 +644,9 @@
                                                 "command": "EVENT_TEXT",
                                                 "args": {
                                                   "text": [
-                                                    "You shouldn't \ntrust creatures \nlike me.",
+                                                    "You shouldn't\ntrust creatures\nlike me.",
                                                     "We... I...\ndon't deserve it.",
-                                                    "But I'm glad you\ndo."
+                                                    "But I'm glad\nyou do."
                                                   ],
                                                   "__section": "text",
                                                   "avatarId": "",
@@ -666,7 +666,7 @@
                                                   "closeDelayFrames": 30,
                                                   "__collapse": false
                                                 },
-                                                "id": "f5585e03-0b75-4ec8-b908-767f2ce522eb"
+                                                "id": "3ba58a83-321b-46fc-b2d2-79cca0c2b40b"
                                               },
                                               {
                                                 "command": "EVENT_ACTOR_SET_STATE",
@@ -676,24 +676,24 @@
                                                   "loopAnim": true,
                                                   "__collapse": true
                                                 },
-                                                "id": "ff638617-e551-4d6e-9bea-4e1997e8930a"
+                                                "id": "f037838b-f4fd-4156-9f0c-57c7241b714e"
                                               }
                                             ],
                                             "false": []
                                           },
-                                          "id": "f92a3d45-6468-4c35-a65e-05baebc34e9f"
+                                          "id": "b14b0106-9682-4bff-82e5-d024ec25741e"
                                         }
                                       ]
                                     },
-                                    "id": "5d1888d3-fd95-43ee-bf2c-ff0800a5dd5c"
+                                    "id": "5813ccf4-e733-41d5-b7fb-5930aae70e4d"
                                   }
                                 ]
                               },
-                              "id": "277d76e6-4efa-405e-903c-bb10c714f0df"
+                              "id": "1e1cc5c2-b015-4b95-8198-c696d3780fae"
                             }
                           ]
                         },
-                        "id": "245de8b2-c36d-4f9c-9591-bcb6144fffc9"
+                        "id": "a8bca048-ea23-4fd4-967b-2a84b0490003"
                       }
                     ]
                   },

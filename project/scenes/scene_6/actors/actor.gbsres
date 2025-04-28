@@ -42,7 +42,7 @@
                   "value": 0
                 }
               },
-              "__collapseElse": true,
+              "__collapseElse": false,
               "__collapse": false
             },
             "children": {
@@ -86,7 +86,7 @@
                         "command": "EVENT_TEXT",
                         "args": {
                           "text": [
-                            "A gift? For me?",
+                            "You bring me\nblood... without\nflinching.",
                             "Curious. Reckless.\nDelightful."
                           ],
                           "__section": "text",
@@ -105,7 +105,7 @@
                           "closeButton": "a",
                           "closeDelayTime": 0.5,
                           "closeDelayFrames": 30,
-                          "__collapse": true
+                          "__collapse": false
                         },
                         "id": "e397ac10-4f80-4560-99c5-56db764b952d"
                       },
@@ -163,7 +163,7 @@
                                 "closeButton": "a",
                                 "closeDelayTime": 0.5,
                                 "closeDelayFrames": 30,
-                                "__collapse": true
+                                "__collapse": false
                               },
                               "id": "c12bbf2c-4a6e-4334-a990-fde1126edcb2"
                             },
@@ -201,6 +201,7 @@
                                     "command": "EVENT_TEXT",
                                     "args": {
                                       "text": [
+                                        "This blood you\ngive me...",
                                         "I had forgotten\nwhat it was...",
                                         "to be sought,\nrather than\nshunned."
                                       ],
@@ -220,7 +221,7 @@
                                       "closeButton": "a",
                                       "closeDelayTime": 0.5,
                                       "closeDelayFrames": 30,
-                                      "__collapse": true
+                                      "__collapse": false
                                     },
                                     "id": "8e9dab7c-7833-49b7-83eb-80bcfcef8307"
                                   },
@@ -259,8 +260,9 @@
                                           "command": "EVENT_TEXT",
                                           "args": {
                                             "text": [
-                                              "Your kindness\ngnaws at old bones",
-                                              "...waking what I\nthought was long\nburied."
+                                              "Another vessel of\nblood...",
+                                              "You are waking\nwhat I thought\nwas long buried.",
+                                              "I find myself\nwishing you would\nstay."
                                             ],
                                             "__section": "text",
                                             "avatarId": "",
@@ -278,7 +280,7 @@
                                             "closeButton": "a",
                                             "closeDelayTime": 0.5,
                                             "closeDelayFrames": 30,
-                                            "__collapse": true
+                                            "__collapse": false
                                           },
                                           "id": "4e73422a-15de-47f0-9759-60074b445594"
                                         },
@@ -318,7 +320,7 @@
                                                 "args": {
                                                   "text": [
                                                     "Five times you\nhave returned...",
-                                                    "Five times you\nchose to see me",
+                                                    "Five times you\nchose to see me...",
                                                     "not the monster.",
                                                     "If you would stay,\nI would no longer\nhaunt these halls",
                                                     "...alone."
@@ -339,7 +341,7 @@
                                                   "closeButton": "a",
                                                   "closeDelayTime": 0.5,
                                                   "closeDelayFrames": 30,
-                                                  "__collapse": true
+                                                  "__collapse": false
                                                 },
                                                 "id": "6dc6eb30-b785-4760-bde9-a6990b83bf7c"
                                               },
@@ -366,8 +368,8 @@
                                                     "value": 0
                                                   },
                                                   "direction": "",
-                                                  "fadeSpeed": "2",
-                                                  "__collapse": true
+                                                  "fadeSpeed": 5,
+                                                  "__collapse": false
                                                 },
                                                 "id": "ef889b4f-b7f3-4623-a8a5-d5ad745e006f"
                                               }
@@ -474,7 +476,7 @@
                               "command": "EVENT_TEXT",
                               "args": {
                                 "text": [
-                                  "A gift? For me?",
+                                  "You bring me\nblood... without\nflinching.",
                                   "Curious. Reckless.\nDelightful."
                                 ],
                                 "__section": "text",
@@ -493,9 +495,9 @@
                                 "closeButton": "a",
                                 "closeDelayTime": 0.5,
                                 "closeDelayFrames": 30,
-                                "__collapse": true
+                                "__collapse": false
                               },
-                              "id": "9a3154f9-82e9-42f3-ab54-7b5e26e73f6f"
+                              "id": "c63b9038-3914-4c3b-81c6-0dffd104df83"
                             },
                             {
                               "command": "EVENT_ACTOR_SET_STATE",
@@ -505,7 +507,7 @@
                                 "loopAnim": true,
                                 "__collapse": true
                               },
-                              "id": "3be3b954-afbf-496c-aca5-17398037a448"
+                              "id": "e08c585c-c5a3-4d95-8116-2d3d056d9d2b"
                             }
                           ],
                           "false": [
@@ -551,9 +553,9 @@
                                       "closeButton": "a",
                                       "closeDelayTime": 0.5,
                                       "closeDelayFrames": 30,
-                                      "__collapse": true
+                                      "__collapse": false
                                     },
-                                    "id": "858d591c-8b9c-4058-b957-7f6195daeb1f"
+                                    "id": "c4df5e93-c833-4e68-9235-0a525679098d"
                                   },
                                   {
                                     "command": "EVENT_ACTOR_SET_STATE",
@@ -563,7 +565,7 @@
                                       "loopAnim": true,
                                       "__collapse": true
                                     },
-                                    "id": "e10a9c26-3cb7-4e7c-8082-1b6e5ffe9e32"
+                                    "id": "20965f49-406f-4dac-a6c4-e83400738c79"
                                   }
                                 ],
                                 "false": [
@@ -589,6 +591,7 @@
                                           "command": "EVENT_TEXT",
                                           "args": {
                                             "text": [
+                                              "This blood you\ngive me...",
                                               "I had forgotten\nwhat it was...",
                                               "to be sought,\nrather than\nshunned."
                                             ],
@@ -608,9 +611,9 @@
                                             "closeButton": "a",
                                             "closeDelayTime": 0.5,
                                             "closeDelayFrames": 30,
-                                            "__collapse": true
+                                            "__collapse": false
                                           },
-                                          "id": "b8f8a627-9588-4218-87ec-31a01b868fa6"
+                                          "id": "311b0556-ed40-4176-b117-9d9e70e391b4"
                                         },
                                         {
                                           "command": "EVENT_ACTOR_SET_STATE",
@@ -620,7 +623,7 @@
                                             "loopAnim": true,
                                             "__collapse": true
                                           },
-                                          "id": "9dcc3781-5396-4b7e-a8bb-469ba01e2cff"
+                                          "id": "95101620-117c-4bf7-8069-278f5294129b"
                                         }
                                       ],
                                       "false": [
@@ -647,8 +650,9 @@
                                                 "command": "EVENT_TEXT",
                                                 "args": {
                                                   "text": [
-                                                    "Your kindness\ngnaws at old bones",
-                                                    "...waking what I\nthought was long\nburied."
+                                                    "Another vessel of\nblood...",
+                                                    "You are waking\nwhat I thought\nwas long buried.",
+                                                    "I find myself\nwishing you would\nstay."
                                                   ],
                                                   "__section": "text",
                                                   "avatarId": "",
@@ -666,9 +670,9 @@
                                                   "closeButton": "a",
                                                   "closeDelayTime": 0.5,
                                                   "closeDelayFrames": 30,
-                                                  "__collapse": true
+                                                  "__collapse": false
                                                 },
-                                                "id": "18f4f8a7-1706-4b4c-8a7c-c02ac9d341ba"
+                                                "id": "27f6a444-a913-4986-99cc-78fa784de481"
                                               },
                                               {
                                                 "command": "EVENT_ACTOR_SET_STATE",
@@ -678,24 +682,24 @@
                                                   "loopAnim": true,
                                                   "__collapse": true
                                                 },
-                                                "id": "3624f069-43ac-49b7-8a74-aa0880e09106"
+                                                "id": "8e34bd2c-f4ac-4873-b95d-725f5e90e7e3"
                                               }
                                             ],
                                             "false": []
                                           },
-                                          "id": "ee2a4300-4139-4d06-96a4-45a79164652b"
+                                          "id": "aa430c00-03e0-4aa9-a055-78179c694086"
                                         }
                                       ]
                                     },
-                                    "id": "06aaa23d-cd3b-4347-af50-284ec142fa51"
+                                    "id": "eaf6d34c-9546-47cf-a576-3c7a5d3d5892"
                                   }
                                 ]
                               },
-                              "id": "b37d36f4-2ce7-43cd-a0ce-72031b39a4f6"
+                              "id": "2064c373-4278-49c0-a7af-3de19da91cd1"
                             }
                           ]
                         },
-                        "id": "b799aeb5-6cae-4d0c-8c7f-24e7407d32bc"
+                        "id": "ada12b23-2b72-4ad6-b83c-dd7d4db83163"
                       }
                     ]
                   },

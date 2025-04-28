@@ -77,7 +77,7 @@
                         "value": 1
                       }
                     },
-                    "__collapseElse": true,
+                    "__collapseElse": false,
                     "__collapse": true
                   },
                   "children": {
@@ -86,7 +86,7 @@
                         "command": "EVENT_TEXT",
                         "args": {
                           "text": [
-                            "A gift. how \nthoughtful.",
+                            "Blood. How \nthoughtful.",
                             "And here I thought\nyou were just\nanother...",
                             "fleeting \namusement."
                           ],
@@ -106,7 +106,7 @@
                           "closeButton": "a",
                           "closeDelayTime": 0.5,
                           "closeDelayFrames": 30,
-                          "__collapse": true
+                          "__collapse": false
                         },
                         "id": "97b158ae-0ca0-4384-9e7f-d0bdad2260bb"
                       },
@@ -136,7 +136,7 @@
                               "value": 2
                             }
                           },
-                          "__collapseElse": true
+                          "__collapseElse": false
                         },
                         "children": {
                           "true": [
@@ -164,7 +164,7 @@
                                 "closeButton": "a",
                                 "closeDelayTime": 0.5,
                                 "closeDelayFrames": 30,
-                                "__collapse": true
+                                "__collapse": false
                               },
                               "id": "0a7ec3bf-aaaa-4999-92f3-8205f607fc91"
                             },
@@ -194,7 +194,7 @@
                                     "value": 3
                                   }
                                 },
-                                "__collapseElse": true
+                                "__collapseElse": false
                               },
                               "children": {
                                 "true": [
@@ -202,8 +202,9 @@
                                     "command": "EVENT_TEXT",
                                     "args": {
                                       "text": [
-                                        "Most are too\neasily frightened.",
-                                        "Yet, here you\nare...",
+                                        "Most fear what we\nthirst for.",
+                                        "But you?",
+                                        "You offer it\nwithout trembling.",
                                         "I find myself...\nintrigued"
                                       ],
                                       "__section": "text",
@@ -222,7 +223,7 @@
                                       "closeButton": "a",
                                       "closeDelayTime": 0.5,
                                       "closeDelayFrames": 30,
-                                      "__collapse": true
+                                      "__collapse": false
                                     },
                                     "id": "e9550473-24a4-4e90-b6bd-56a3881a9dea"
                                   },
@@ -261,9 +262,9 @@
                                           "command": "EVENT_TEXT",
                                           "args": {
                                             "text": [
-                                              "You surprise me.",
-                                              "I thought your\nflame would burn\nout quickly...",
-                                              "but here you\nstand, steady and\nbright."
+                                              "Another bottle,\nanother promise.",
+                                              "I begin to\nwonder...",
+                                              "Who is truly\nseducing whom?"
                                             ],
                                             "__section": "text",
                                             "avatarId": "",
@@ -281,7 +282,7 @@
                                             "closeButton": "a",
                                             "closeDelayTime": 0.5,
                                             "closeDelayFrames": 30,
-                                            "__collapse": true
+                                            "__collapse": false
                                           },
                                           "id": "6482fca1-a2c1-460e-bafd-fd6306fda3ee"
                                         },
@@ -312,7 +313,7 @@
                                               }
                                             },
                                             "__collapseElse": true,
-                                            "__collapse": true
+                                            "__collapse": false
                                           },
                                           "children": {
                                             "true": [
@@ -369,8 +370,8 @@
                                                     "value": 0
                                                   },
                                                   "direction": "",
-                                                  "fadeSpeed": "2",
-                                                  "__collapse": true
+                                                  "fadeSpeed": 4,
+                                                  "__collapse": false
                                                 },
                                                 "id": "00aa6d4f-ce6f-439e-a308-b041f49952bf"
                                               }
@@ -412,7 +413,7 @@
                       }
                     },
                     "__collapseElse": false,
-                    "__collapse": true
+                    "__collapse": false
                   },
                   "children": {
                     "true": [
@@ -477,7 +478,7 @@
                               "command": "EVENT_TEXT",
                               "args": {
                                 "text": [
-                                  "A gift. how \nthoughtful.",
+                                  "Blood. How \nthoughtful.",
                                   "And here I thought\nyou were just\nanother...",
                                   "fleeting \namusement."
                                 ],
@@ -497,9 +498,9 @@
                                 "closeButton": "a",
                                 "closeDelayTime": 0.5,
                                 "closeDelayFrames": 30,
-                                "__collapse": true
+                                "__collapse": false
                               },
-                              "id": "eb9494a4-0f3d-4bf5-ad9e-03520c507d2f"
+                              "id": "f85496b6-d54e-43e2-873d-633893cb1e7b"
                             },
                             {
                               "command": "EVENT_ACTOR_SET_STATE",
@@ -509,7 +510,7 @@
                                 "loopAnim": true,
                                 "__collapse": true
                               },
-                              "id": "957da0f4-254f-4b3d-ab06-2510e18dbf82"
+                              "id": "6399caf8-016d-4c09-9e6e-203966675d16"
                             }
                           ],
                           "false": [
@@ -555,9 +556,9 @@
                                       "closeButton": "a",
                                       "closeDelayTime": 0.5,
                                       "closeDelayFrames": 30,
-                                      "__collapse": true
+                                      "__collapse": false
                                     },
-                                    "id": "1cab705a-1fb1-4979-ab2b-637d8fedaef8"
+                                    "id": "361ba996-017d-47cc-9d07-759546c91c8f"
                                   },
                                   {
                                     "command": "EVENT_ACTOR_SET_STATE",
@@ -567,7 +568,7 @@
                                       "loopAnim": true,
                                       "__collapse": true
                                     },
-                                    "id": "9af34fe0-10d8-4053-a06f-8a76000ddc3d"
+                                    "id": "76b3fde4-9a37-4468-8821-b5aa522eeebd"
                                   }
                                 ],
                                 "false": [
@@ -585,7 +586,8 @@
                                           "value": 3
                                         }
                                       },
-                                      "__collapseElse": false
+                                      "__collapseElse": false,
+                                      "__collapse": false
                                     },
                                     "children": {
                                       "true": [
@@ -593,8 +595,9 @@
                                           "command": "EVENT_TEXT",
                                           "args": {
                                             "text": [
-                                              "Most are too\neasily frightened.",
-                                              "Yet, here you\nare...",
+                                              "Most fear what we\nthirst for.",
+                                              "But you?",
+                                              "You offer it\nwithout trembling.",
                                               "I find myself...\nintrigued"
                                             ],
                                             "__section": "text",
@@ -613,9 +616,9 @@
                                             "closeButton": "a",
                                             "closeDelayTime": 0.5,
                                             "closeDelayFrames": 30,
-                                            "__collapse": true
+                                            "__collapse": false
                                           },
-                                          "id": "81061850-e071-4d3e-9e14-aac50917ddf9"
+                                          "id": "0478e16a-1992-4b81-b844-3b1ec26fed44"
                                         },
                                         {
                                           "command": "EVENT_ACTOR_SET_STATE",
@@ -625,7 +628,7 @@
                                             "loopAnim": true,
                                             "__collapse": true
                                           },
-                                          "id": "355451f7-ae20-45f3-9f2f-7442d19ba86d"
+                                          "id": "c9b9250c-5914-4669-8781-1d339441b77e"
                                         }
                                       ],
                                       "false": [
@@ -643,7 +646,7 @@
                                                 "value": 4
                                               }
                                             },
-                                            "__collapseElse": true,
+                                            "__collapseElse": false,
                                             "__collapse": false
                                           },
                                           "children": {
@@ -652,9 +655,9 @@
                                                 "command": "EVENT_TEXT",
                                                 "args": {
                                                   "text": [
-                                                    "You surprise me.",
-                                                    "I thought your\nflame would burn\nout quickly...",
-                                                    "but here you\nstand, steady and\nbright."
+                                                    "Another bottle,\nanother promise.",
+                                                    "I begin to\nwonder...",
+                                                    "Who is truly\nseducing whom?"
                                                   ],
                                                   "__section": "text",
                                                   "avatarId": "",
@@ -672,9 +675,9 @@
                                                   "closeButton": "a",
                                                   "closeDelayTime": 0.5,
                                                   "closeDelayFrames": 30,
-                                                  "__collapse": true
+                                                  "__collapse": false
                                                 },
-                                                "id": "bc7c7b50-e372-426a-9b23-dc6793807379"
+                                                "id": "f2af021f-a7a9-40dd-b5e4-0ca09b7b8bd6"
                                               },
                                               {
                                                 "command": "EVENT_ACTOR_SET_STATE",
@@ -684,24 +687,24 @@
                                                   "loopAnim": true,
                                                   "__collapse": true
                                                 },
-                                                "id": "42ed92ff-b317-4c3e-b757-38f751634b83"
+                                                "id": "7c9e41ba-0ee5-484e-ac45-5546be70ee6f"
                                               }
                                             ],
                                             "false": []
                                           },
-                                          "id": "31d02c53-e26b-4506-b8a7-eb906f0e54a6"
+                                          "id": "70750d5d-ebe3-4495-b48f-9d44e6ef663a"
                                         }
                                       ]
                                     },
-                                    "id": "5ad31e87-6815-40ab-a86e-9b1a44546859"
+                                    "id": "b70cb8ef-0093-4ad8-8fab-d0cd7f1e9b0f"
                                   }
                                 ]
                               },
-                              "id": "2838eaa5-85dc-4927-a24a-231f388c7c11"
+                              "id": "a17a4252-4c9f-4651-ba33-8c0b59012358"
                             }
                           ]
                         },
-                        "id": "0f688f3e-5412-4b35-9371-bb878fabd1f6"
+                        "id": "cd1b9b84-3c65-488d-9b71-42a9f0d6ed46"
                       }
                     ]
                   },
