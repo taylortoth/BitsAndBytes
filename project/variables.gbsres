@@ -1,4 +1,10 @@
 {
   "_resourceType": "variables",
-  "variables": []
+  "variables": [
+    {
+      "id": "0",
+      "name": "Variable 0",
+      "symbol": "var_variable_0"
+    }
+  ]
 }
