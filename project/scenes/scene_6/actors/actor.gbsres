@@ -17,35 +17,93 @@
   "symbol": "actor_2",
   "script": [
     {
-      "command": "EVENT_TEXT",
+      "command": "EVENT_IF",
       "args": {
-        "text": [
-          "...A newcomer.\nHow terribly \nunfortunate.",
-          "Few stay long in\nthis town.",
-          "Fewer\nstill seek my\ncompany.",
-          "I am Nosferatu!",
-          "Scholar, relic...\nburden, some would\nsay.",
-          "If curiosity \nbrought you here..",
-          "take care it does \nnot devour you \nwhole."
-        ],
-        "__section": "text",
-        "avatarId": "",
-        "minHeight": 4,
-        "maxHeight": 7,
-        "textX": 1,
-        "textY": 1,
-        "textHeight": 5,
-        "position": "bottom",
-        "clearPrevious": true,
-        "showFrame": "true",
-        "speedIn": 0,
-        "speedOut": 0,
-        "closeWhen": "key",
-        "closeButton": "any",
-        "closeDelayTime": 0.5,
-        "closeDelayFrames": 30
+        "condition": {
+          "type": "variable",
+          "value": "6"
+        },
+        "__collapseElse": true,
+        "__collapse": true
       },
-      "id": "d1a22b39-26ad-488f-bd2f-4c445baa47bc"
+      "children": {
+        "true": [],
+        "false": []
+      },
+      "id": "714cf016-bbc7-4553-9cf7-785d742fcda5"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "not",
+          "value": {
+            "type": "variable",
+            "value": "6"
+          }
+        },
+        "__collapseElse": true,
+        "__collapse": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "...A newcomer.\nHow terribly \nunfortunate.",
+                "Few stay long in\nthis town.",
+                "Fewer\nstill seek my\ncompany.",
+                "I am Nosferatu!",
+                "Scholar, relic...\nburden, some would\nsay.",
+                "If curiosity \nbrought you here..",
+                "take care it does \nnot devour you \nwhole."
+              ],
+              "__section": "text",
+              "avatarId": "",
+              "minHeight": 4,
+              "maxHeight": 7,
+              "textX": 1,
+              "textY": 1,
+              "textHeight": 5,
+              "position": "bottom",
+              "clearPrevious": true,
+              "showFrame": "true",
+              "speedIn": 0,
+              "speedOut": 0,
+              "closeWhen": "key",
+              "closeButton": "any",
+              "closeDelayTime": 0.5,
+              "closeDelayFrames": 30,
+              "__collapse": true
+            },
+            "id": "d1a22b39-26ad-488f-bd2f-4c445baa47bc"
+          },
+          {
+            "command": "EVENT_ACTOR_SET_STATE",
+            "args": {
+              "actorId": "$self$",
+              "spriteStateId": "",
+              "loopAnim": true,
+              "__collapse": true
+            },
+            "id": "4c0abf98-c65a-4a40-ab91-2f81ee4be1b9"
+          },
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "6",
+              "value": {
+                "type": "true"
+              },
+              "__collapse": true
+            },
+            "id": "9284cfab-b4b3-4245-bc3d-17254f1fbf06"
+          }
+        ],
+        "false": []
+      },
+      "id": "cc578926-69c8-4242-97e2-3e5b1ec8f1e3"
     }
   ],
   "startScript": [],

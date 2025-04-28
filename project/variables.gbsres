@@ -25,6 +25,31 @@
       "id": "4",
       "name": "Allucard inventory",
       "symbol": "var_allucard_inventory"
+    },
+    {
+      "id": "5",
+      "name": "edwardfirsttalk",
+      "symbol": "var_edwardfirsttalk"
+    },
+    {
+      "id": "6",
+      "name": "nosferatufirsttalk",
+      "symbol": "var_nosferatufirsttalk"
+    },
+    {
+      "id": "7",
+      "name": "alucardfirsttalk",
+      "symbol": "var_alucardfirsttalk"
+    },
+    {
+      "id": "8",
+      "name": "carmillafirsttalk",
+      "symbol": "var_carmillafirsttalk"
+    },
+    {
+      "id": "4938605a-8a21-48b8-ab91-27a4e7293a86__L0",
+      "name": "Local 0",
+      "symbol": "var_local_0"
     }
   ]
 }

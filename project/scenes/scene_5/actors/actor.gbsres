@@ -17,34 +17,119 @@
   "symbol": "actor_1",
   "script": [
     {
-      "command": "EVENT_TEXT",
+      "command": "EVENT_IF",
       "args": {
-        "text": [
-          "Oh?\nA new face... \nand such a lively\none at that.",
-          "How delightful ;)",
-          "This town could \nuse a little fresh\nblood.",
-          "I'm Carmilla, \ndarling.Tell me...",
-          "Are you here \nlooking for \ntrouble? ",
-          "Or has \ntrouble already \nfound you?"
-        ],
-        "__section": "text",
-        "avatarId": "",
-        "minHeight": 4,
-        "maxHeight": 7,
-        "textX": 1,
-        "textY": 1,
-        "textHeight": 5,
-        "position": "bottom",
-        "clearPrevious": true,
-        "showFrame": "true",
-        "speedIn": 0,
-        "speedOut": 0,
-        "closeWhen": "key",
-        "closeButton": "any",
-        "closeDelayTime": 0.5,
-        "closeDelayFrames": 30
+        "condition": {
+          "type": "variable",
+          "value": "8"
+        },
+        "__collapseElse": true,
+        "__collapse": true
       },
-      "id": "625c81da-f99c-4f8a-96ad-cf1d038c70ee"
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "hi"
+              ],
+              "__section": "text",
+              "avatarId": "",
+              "minHeight": 4,
+              "maxHeight": 7,
+              "textX": 1,
+              "textY": 1,
+              "textHeight": 5,
+              "position": "bottom",
+              "clearPrevious": true,
+              "showFrame": "true",
+              "speedIn": -1,
+              "speedOut": -1,
+              "closeWhen": "key",
+              "closeButton": "a",
+              "closeDelayTime": 0.5,
+              "closeDelayFrames": 30,
+              "__collapse": true
+            },
+            "id": "6ea92bff-a684-46f1-b57f-0b16a6707752"
+          }
+        ],
+        "false": []
+      },
+      "id": "461817a0-e742-4982-b0f6-38485437973e"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "not",
+          "value": {
+            "type": "variable",
+            "value": "8"
+          }
+        },
+        "__collapseElse": true,
+        "__collapse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Oh?\nA new face... \nand such a lively\none at that.",
+                "How delightful ;)",
+                "This town could \nuse a little fresh\nblood.",
+                "I'm Carmilla, \ndarling.Tell me...",
+                "Are you here \nlooking for \ntrouble? ",
+                "Or has \ntrouble already \nfound you?"
+              ],
+              "__section": "text",
+              "avatarId": "",
+              "minHeight": 4,
+              "maxHeight": 7,
+              "textX": 1,
+              "textY": 1,
+              "textHeight": 5,
+              "position": "bottom",
+              "clearPrevious": true,
+              "showFrame": "true",
+              "speedIn": 0,
+              "speedOut": 0,
+              "closeWhen": "key",
+              "closeButton": "any",
+              "closeDelayTime": 0.5,
+              "closeDelayFrames": 30,
+              "__collapse": true
+            },
+            "id": "625c81da-f99c-4f8a-96ad-cf1d038c70ee"
+          },
+          {
+            "command": "EVENT_ACTOR_SET_STATE",
+            "args": {
+              "actorId": "$self$",
+              "spriteStateId": "",
+              "loopAnim": true,
+              "__collapse": true
+            },
+            "id": "775e10fa-a040-4467-8baf-1e9f170c42c2"
+          },
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "8",
+              "value": {
+                "type": "true"
+              },
+              "__collapse": true
+            },
+            "id": "6bac92c2-bb7f-4005-89b8-d75a160f194f"
+          }
+        ],
+        "false": []
+      },
+      "id": "aff1c587-4604-4691-b4c1-30e9e964f2e2"
     }
   ],
   "startScript": [],
