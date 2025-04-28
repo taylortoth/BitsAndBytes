@@ -1,10 +1,4 @@
 {
   "_resourceType": "variables",
-  "variables": [
-    {
-      "id": "0",
-      "name": "blood bottles",
-      "symbol": "var_blood_bottles"
-    }
-  ]
+  "variables": []
 }

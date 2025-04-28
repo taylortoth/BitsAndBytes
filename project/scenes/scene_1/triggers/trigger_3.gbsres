@@ -3,11 +3,11 @@
   "id": "5ef90343-0af8-4603-9521-8ef2dc101b77",
   "name": "",
   "prefabId": "",
-  "x": 26,
-  "y": 0,
+  "x": 12,
+  "y": 1,
   "symbol": "trigger_2",
   "prefabScriptOverrides": {},
-  "width": 6,
+  "width": 2,
   "height": 1,
   "script": [
     {
@@ -20,7 +20,7 @@
         },
         "y": {
           "type": "number",
-          "value": 15
+          "value": 16
         },
         "direction": "",
         "fadeSpeed": "2"

@@ -1,6 +1,6 @@
 {
   "_resourceType": "background",
-  "id": "9154fa3c-487e-4d0f-8dfe-af7d0a0edef1",
+  "id": "7d1c5fd1-7c01-4a21-a835-ab6d08af86a4",
   "name": "newbackground",
   "symbol": "bg_newbackground",
   "width": 60,
@@ -8,5 +8,6 @@
   "imageWidth": 480,
   "imageHeight": 256,
   "filename": "newbackground.png",
-  "tileColors": ""
+  "tileColors": "",
+  "autoColor": false
 }
