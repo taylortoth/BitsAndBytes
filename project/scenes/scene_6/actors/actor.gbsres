@@ -42,7 +42,7 @@
                   "value": 0
                 }
               },
-              "__collapseElse": false,
+              "__collapseElse": true,
               "__collapse": false
             },
             "children": {
@@ -62,6 +62,335 @@
                     "__collapse": true
                   },
                   "id": "410bb5ec-a8dd-4f4f-986e-daf9df771005"
+                },
+                {
+                  "command": "EVENT_IF",
+                  "args": {
+                    "condition": {
+                      "type": "eq",
+                      "valueA": {
+                        "type": "variable",
+                        "value": "3"
+                      },
+                      "valueB": {
+                        "type": "number",
+                        "value": 1
+                      }
+                    },
+                    "__collapseElse": false,
+                    "__collapse": true
+                  },
+                  "children": {
+                    "true": [
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "A gift? For me?",
+                            "Curious. Reckless.\nDelightful."
+                          ],
+                          "__section": "text",
+                          "avatarId": "",
+                          "minHeight": 4,
+                          "maxHeight": 7,
+                          "textX": 1,
+                          "textY": 1,
+                          "textHeight": 5,
+                          "position": "bottom",
+                          "clearPrevious": true,
+                          "showFrame": "true",
+                          "speedIn": -1,
+                          "speedOut": -1,
+                          "closeWhen": "key",
+                          "closeButton": "a",
+                          "closeDelayTime": 0.5,
+                          "closeDelayFrames": 30,
+                          "__collapse": true
+                        },
+                        "id": "e397ac10-4f80-4560-99c5-56db764b952d"
+                      },
+                      {
+                        "command": "EVENT_ACTOR_SET_STATE",
+                        "args": {
+                          "actorId": "$self$",
+                          "spriteStateId": "",
+                          "loopAnim": true,
+                          "__collapse": true
+                        },
+                        "id": "023ad4e7-e3eb-4129-a3d0-d4cf3ee8b5c4"
+                      }
+                    ],
+                    "false": [
+                      {
+                        "command": "EVENT_IF",
+                        "args": {
+                          "condition": {
+                            "type": "eq",
+                            "valueA": {
+                              "type": "variable",
+                              "value": "3"
+                            },
+                            "valueB": {
+                              "type": "number",
+                              "value": 2
+                            }
+                          },
+                          "__collapseElse": false
+                        },
+                        "children": {
+                          "true": [
+                            {
+                              "command": "EVENT_TEXT",
+                              "args": {
+                                "text": [
+                                  "So many flee at\nthe first sight\nof me.",
+                                  "However you...",
+                                  "You keep\nreturning..."
+                                ],
+                                "__section": "text",
+                                "avatarId": "",
+                                "minHeight": 4,
+                                "maxHeight": 7,
+                                "textX": 1,
+                                "textY": 1,
+                                "textHeight": 5,
+                                "position": "bottom",
+                                "clearPrevious": true,
+                                "showFrame": "true",
+                                "speedIn": -1,
+                                "speedOut": -1,
+                                "closeWhen": "key",
+                                "closeButton": "a",
+                                "closeDelayTime": 0.5,
+                                "closeDelayFrames": 30,
+                                "__collapse": true
+                              },
+                              "id": "c12bbf2c-4a6e-4334-a990-fde1126edcb2"
+                            },
+                            {
+                              "command": "EVENT_ACTOR_SET_STATE",
+                              "args": {
+                                "actorId": "$self$",
+                                "spriteStateId": "",
+                                "loopAnim": true,
+                                "__collapse": true
+                              },
+                              "id": "d48fd683-b5a4-4396-bec7-a3d037933097"
+                            }
+                          ],
+                          "false": [
+                            {
+                              "command": "EVENT_IF",
+                              "args": {
+                                "condition": {
+                                  "type": "eq",
+                                  "valueA": {
+                                    "type": "variable",
+                                    "value": "3"
+                                  },
+                                  "valueB": {
+                                    "type": "number",
+                                    "value": 3
+                                  }
+                                },
+                                "__collapseElse": false
+                              },
+                              "children": {
+                                "true": [
+                                  {
+                                    "command": "EVENT_TEXT",
+                                    "args": {
+                                      "text": [
+                                        "I had forgotten\nwhat it was...",
+                                        "to be sought,\nrather than\nshunned."
+                                      ],
+                                      "__section": "text",
+                                      "avatarId": "",
+                                      "minHeight": 4,
+                                      "maxHeight": 7,
+                                      "textX": 1,
+                                      "textY": 1,
+                                      "textHeight": 5,
+                                      "position": "bottom",
+                                      "clearPrevious": true,
+                                      "showFrame": "true",
+                                      "speedIn": -1,
+                                      "speedOut": -1,
+                                      "closeWhen": "key",
+                                      "closeButton": "a",
+                                      "closeDelayTime": 0.5,
+                                      "closeDelayFrames": 30,
+                                      "__collapse": true
+                                    },
+                                    "id": "8e9dab7c-7833-49b7-83eb-80bcfcef8307"
+                                  },
+                                  {
+                                    "command": "EVENT_ACTOR_SET_STATE",
+                                    "args": {
+                                      "actorId": "$self$",
+                                      "spriteStateId": "",
+                                      "loopAnim": true,
+                                      "__collapse": true
+                                    },
+                                    "id": "3447a291-f24c-4a11-a23e-e5969b4c398f"
+                                  }
+                                ],
+                                "false": [
+                                  {
+                                    "command": "EVENT_IF",
+                                    "args": {
+                                      "condition": {
+                                        "type": "eq",
+                                        "valueA": {
+                                          "type": "variable",
+                                          "value": "3"
+                                        },
+                                        "valueB": {
+                                          "type": "number",
+                                          "value": 4
+                                        }
+                                      },
+                                      "__collapseElse": false,
+                                      "__collapse": false
+                                    },
+                                    "children": {
+                                      "true": [
+                                        {
+                                          "command": "EVENT_TEXT",
+                                          "args": {
+                                            "text": [
+                                              "Your kindness\ngnaws at old bones",
+                                              "...waking what I\nthought was long\nburied."
+                                            ],
+                                            "__section": "text",
+                                            "avatarId": "",
+                                            "minHeight": 4,
+                                            "maxHeight": 7,
+                                            "textX": 1,
+                                            "textY": 1,
+                                            "textHeight": 5,
+                                            "position": "bottom",
+                                            "clearPrevious": true,
+                                            "showFrame": "true",
+                                            "speedIn": -1,
+                                            "speedOut": -1,
+                                            "closeWhen": "key",
+                                            "closeButton": "a",
+                                            "closeDelayTime": 0.5,
+                                            "closeDelayFrames": 30,
+                                            "__collapse": true
+                                          },
+                                          "id": "4e73422a-15de-47f0-9759-60074b445594"
+                                        },
+                                        {
+                                          "command": "EVENT_ACTOR_SET_STATE",
+                                          "args": {
+                                            "actorId": "$self$",
+                                            "spriteStateId": "",
+                                            "loopAnim": true,
+                                            "__collapse": true
+                                          },
+                                          "id": "3fda04cd-d41c-43b7-a6b0-b03f9894e4c8"
+                                        }
+                                      ],
+                                      "false": [
+                                        {
+                                          "command": "EVENT_IF",
+                                          "args": {
+                                            "condition": {
+                                              "type": "eq",
+                                              "valueA": {
+                                                "type": "variable",
+                                                "value": "3"
+                                              },
+                                              "valueB": {
+                                                "type": "number",
+                                                "value": 5
+                                              }
+                                            },
+                                            "__collapseElse": true,
+                                            "__collapse": false
+                                          },
+                                          "children": {
+                                            "true": [
+                                              {
+                                                "command": "EVENT_TEXT",
+                                                "args": {
+                                                  "text": [
+                                                    "Five times you\nhave returned...",
+                                                    "Five times you\nchose to see me",
+                                                    "not the monster.",
+                                                    "If you would stay,\nI would no longer\nhaunt these halls",
+                                                    "...alone."
+                                                  ],
+                                                  "__section": "text",
+                                                  "avatarId": "",
+                                                  "minHeight": 4,
+                                                  "maxHeight": 7,
+                                                  "textX": 1,
+                                                  "textY": 1,
+                                                  "textHeight": 5,
+                                                  "position": "bottom",
+                                                  "clearPrevious": true,
+                                                  "showFrame": "true",
+                                                  "speedIn": -1,
+                                                  "speedOut": -1,
+                                                  "closeWhen": "key",
+                                                  "closeButton": "a",
+                                                  "closeDelayTime": 0.5,
+                                                  "closeDelayFrames": 30,
+                                                  "__collapse": true
+                                                },
+                                                "id": "6dc6eb30-b785-4760-bde9-a6990b83bf7c"
+                                              },
+                                              {
+                                                "command": "EVENT_ACTOR_SET_STATE",
+                                                "args": {
+                                                  "actorId": "$self$",
+                                                  "spriteStateId": "",
+                                                  "loopAnim": true,
+                                                  "__collapse": true
+                                                },
+                                                "id": "928d6af9-04c8-4119-a84e-c480d0a1cbbe"
+                                              },
+                                              {
+                                                "command": "EVENT_SWITCH_SCENE",
+                                                "args": {
+                                                  "sceneId": "e8fb9d7d-13ae-48ca-a72b-9533e6931240",
+                                                  "x": {
+                                                    "type": "number",
+                                                    "value": 0
+                                                  },
+                                                  "y": {
+                                                    "type": "number",
+                                                    "value": 0
+                                                  },
+                                                  "direction": "",
+                                                  "fadeSpeed": "2",
+                                                  "__collapse": true
+                                                },
+                                                "id": "ef889b4f-b7f3-4623-a8a5-d5ad745e006f"
+                                              }
+                                            ],
+                                            "false": []
+                                          },
+                                          "id": "1b61b07d-f913-4b7c-af6b-02d390853123"
+                                        }
+                                      ]
+                                    },
+                                    "id": "ca340d96-362f-4810-8013-03e926682ce3"
+                                  }
+                                ]
+                              },
+                              "id": "e4da2445-aef1-4138-bf9f-a1d47a7f75db"
+                            }
+                          ]
+                        },
+                        "id": "ea90dc83-59b9-4248-8c14-c1b1e74265ec"
+                      }
+                    ]
+                  },
+                  "id": "cbe7ece8-f68d-448c-bc0c-4c0d538500d6"
                 }
               ],
               "false": [
@@ -79,7 +408,8 @@
                         "value": 0
                       }
                     },
-                    "__collapseElse": true
+                    "__collapseElse": false,
+                    "__collapse": false
                   },
                   "children": {
                     "true": [
@@ -120,7 +450,254 @@
                         "id": "c720378a-0033-4311-abde-c21c46d53222"
                       }
                     ],
-                    "false": []
+                    "false": [
+                      {
+                        "command": "EVENT_IF",
+                        "args": {
+                          "condition": {
+                            "type": "eq",
+                            "valueA": {
+                              "type": "variable",
+                              "value": "3"
+                            },
+                            "valueB": {
+                              "type": "number",
+                              "value": 1
+                            }
+                          },
+                          "__collapseElse": false,
+                          "__collapse": false
+                        },
+                        "children": {
+                          "true": [
+                            {
+                              "command": "EVENT_TEXT",
+                              "args": {
+                                "text": [
+                                  "A gift? For me?",
+                                  "Curious. Reckless.\nDelightful."
+                                ],
+                                "__section": "text",
+                                "avatarId": "",
+                                "minHeight": 4,
+                                "maxHeight": 7,
+                                "textX": 1,
+                                "textY": 1,
+                                "textHeight": 5,
+                                "position": "bottom",
+                                "clearPrevious": true,
+                                "showFrame": "true",
+                                "speedIn": -1,
+                                "speedOut": -1,
+                                "closeWhen": "key",
+                                "closeButton": "a",
+                                "closeDelayTime": 0.5,
+                                "closeDelayFrames": 30,
+                                "__collapse": true
+                              },
+                              "id": "9a3154f9-82e9-42f3-ab54-7b5e26e73f6f"
+                            },
+                            {
+                              "command": "EVENT_ACTOR_SET_STATE",
+                              "args": {
+                                "actorId": "$self$",
+                                "spriteStateId": "",
+                                "loopAnim": true,
+                                "__collapse": true
+                              },
+                              "id": "3be3b954-afbf-496c-aca5-17398037a448"
+                            }
+                          ],
+                          "false": [
+                            {
+                              "command": "EVENT_IF",
+                              "args": {
+                                "condition": {
+                                  "type": "eq",
+                                  "valueA": {
+                                    "type": "variable",
+                                    "value": "3"
+                                  },
+                                  "valueB": {
+                                    "type": "number",
+                                    "value": 2
+                                  }
+                                },
+                                "__collapseElse": false
+                              },
+                              "children": {
+                                "true": [
+                                  {
+                                    "command": "EVENT_TEXT",
+                                    "args": {
+                                      "text": [
+                                        "So many flee at\nthe first sight\nof me.",
+                                        "However you...",
+                                        "You keep\nreturning..."
+                                      ],
+                                      "__section": "text",
+                                      "avatarId": "",
+                                      "minHeight": 4,
+                                      "maxHeight": 7,
+                                      "textX": 1,
+                                      "textY": 1,
+                                      "textHeight": 5,
+                                      "position": "bottom",
+                                      "clearPrevious": true,
+                                      "showFrame": "true",
+                                      "speedIn": -1,
+                                      "speedOut": -1,
+                                      "closeWhen": "key",
+                                      "closeButton": "a",
+                                      "closeDelayTime": 0.5,
+                                      "closeDelayFrames": 30,
+                                      "__collapse": true
+                                    },
+                                    "id": "858d591c-8b9c-4058-b957-7f6195daeb1f"
+                                  },
+                                  {
+                                    "command": "EVENT_ACTOR_SET_STATE",
+                                    "args": {
+                                      "actorId": "$self$",
+                                      "spriteStateId": "",
+                                      "loopAnim": true,
+                                      "__collapse": true
+                                    },
+                                    "id": "e10a9c26-3cb7-4e7c-8082-1b6e5ffe9e32"
+                                  }
+                                ],
+                                "false": [
+                                  {
+                                    "command": "EVENT_IF",
+                                    "args": {
+                                      "condition": {
+                                        "type": "eq",
+                                        "valueA": {
+                                          "type": "variable",
+                                          "value": "3"
+                                        },
+                                        "valueB": {
+                                          "type": "number",
+                                          "value": 3
+                                        }
+                                      },
+                                      "__collapseElse": false
+                                    },
+                                    "children": {
+                                      "true": [
+                                        {
+                                          "command": "EVENT_TEXT",
+                                          "args": {
+                                            "text": [
+                                              "I had forgotten\nwhat it was...",
+                                              "to be sought,\nrather than\nshunned."
+                                            ],
+                                            "__section": "text",
+                                            "avatarId": "",
+                                            "minHeight": 4,
+                                            "maxHeight": 7,
+                                            "textX": 1,
+                                            "textY": 1,
+                                            "textHeight": 5,
+                                            "position": "bottom",
+                                            "clearPrevious": true,
+                                            "showFrame": "true",
+                                            "speedIn": -1,
+                                            "speedOut": -1,
+                                            "closeWhen": "key",
+                                            "closeButton": "a",
+                                            "closeDelayTime": 0.5,
+                                            "closeDelayFrames": 30,
+                                            "__collapse": true
+                                          },
+                                          "id": "b8f8a627-9588-4218-87ec-31a01b868fa6"
+                                        },
+                                        {
+                                          "command": "EVENT_ACTOR_SET_STATE",
+                                          "args": {
+                                            "actorId": "$self$",
+                                            "spriteStateId": "",
+                                            "loopAnim": true,
+                                            "__collapse": true
+                                          },
+                                          "id": "9dcc3781-5396-4b7e-a8bb-469ba01e2cff"
+                                        }
+                                      ],
+                                      "false": [
+                                        {
+                                          "command": "EVENT_IF",
+                                          "args": {
+                                            "condition": {
+                                              "type": "eq",
+                                              "valueA": {
+                                                "type": "variable",
+                                                "value": "3"
+                                              },
+                                              "valueB": {
+                                                "type": "number",
+                                                "value": 4
+                                              }
+                                            },
+                                            "__collapseElse": false,
+                                            "__collapse": false
+                                          },
+                                          "children": {
+                                            "true": [
+                                              {
+                                                "command": "EVENT_TEXT",
+                                                "args": {
+                                                  "text": [
+                                                    "Your kindness\ngnaws at old bones",
+                                                    "...waking what I\nthought was long\nburied."
+                                                  ],
+                                                  "__section": "text",
+                                                  "avatarId": "",
+                                                  "minHeight": 4,
+                                                  "maxHeight": 7,
+                                                  "textX": 1,
+                                                  "textY": 1,
+                                                  "textHeight": 5,
+                                                  "position": "bottom",
+                                                  "clearPrevious": true,
+                                                  "showFrame": "true",
+                                                  "speedIn": -1,
+                                                  "speedOut": -1,
+                                                  "closeWhen": "key",
+                                                  "closeButton": "a",
+                                                  "closeDelayTime": 0.5,
+                                                  "closeDelayFrames": 30,
+                                                  "__collapse": true
+                                                },
+                                                "id": "18f4f8a7-1706-4b4c-8a7c-c02ac9d341ba"
+                                              },
+                                              {
+                                                "command": "EVENT_ACTOR_SET_STATE",
+                                                "args": {
+                                                  "actorId": "$self$",
+                                                  "spriteStateId": "",
+                                                  "loopAnim": true,
+                                                  "__collapse": true
+                                                },
+                                                "id": "3624f069-43ac-49b7-8a74-aa0880e09106"
+                                              }
+                                            ],
+                                            "false": []
+                                          },
+                                          "id": "ee2a4300-4139-4d06-96a4-45a79164652b"
+                                        }
+                                      ]
+                                    },
+                                    "id": "06aaa23d-cd3b-4347-af50-284ec142fa51"
+                                  }
+                                ]
+                              },
+                              "id": "b37d36f4-2ce7-43cd-a0ce-72031b39a4f6"
+                            }
+                          ]
+                        },
+                        "id": "b799aeb5-6cae-4d0c-8c7f-24e7407d32bc"
+                      }
+                    ]
                   },
                   "id": "5845ad35-f383-4465-beaf-4ce1500b9602"
                 }
