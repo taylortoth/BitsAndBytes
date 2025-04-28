@@ -11,8 +11,8 @@
   "animSpeed": 15,
   "paletteId": "",
   "isPinned": false,
-  "persistent": false,
-  "collisionGroup": "",
+  "persistent": true,
+  "collisionGroup": "1",
   "prefabScriptOverrides": {},
   "symbol": "actor_3",
   "script": [
@@ -21,8 +21,10 @@
       "args": {
         "text": [
           "Another stranger..\nI wonder what \ndraws you here.",
-          "This town is not \nwhat it seems.\nDanger often walks\nhand-in-hand with\nbeauty.",
-          "I am Alucard.\nIf you intend to \nstay... be certain\nof where your\nloyalties lie."
+          "This town is not \nwhat it seems.",
+          "Danger often walks\nhand-in-hand with\nbeauty.",
+          "I am Alucard.\nIf you intend to \nstay... ",
+          "be certain\nof where your\nloyalties lie."
         ],
         "__section": "text",
         "avatarId": "",
@@ -34,10 +36,10 @@
         "position": "bottom",
         "clearPrevious": true,
         "showFrame": "true",
-        "speedIn": -1,
-        "speedOut": -1,
+        "speedIn": 0,
+        "speedOut": 0,
         "closeWhen": "key",
-        "closeButton": "a",
+        "closeButton": "any",
         "closeDelayTime": 0.5,
         "closeDelayFrames": 30
       },
@@ -45,11 +47,88 @@
     }
   ],
   "startScript": [],
-  "updateScript": [],
+  "updateScript": [
+    {
+      "command": "EVENT_IF_ACTOR_AT_POSITION",
+      "args": {
+        "actorId": "38e79d4c-1c67-45d2-ab52-549d0cfe6696",
+        "x": {
+          "type": "number",
+          "value": 0
+        },
+        "y": {
+          "type": "number",
+          "value": 19
+        },
+        "__collapseElse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_ACTOR_MOVE_TO",
+            "args": {
+              "actorId": "38e79d4c-1c67-45d2-ab52-549d0cfe6696",
+              "x": {
+                "type": "number",
+                "value": 0
+              },
+              "y": {
+                "type": "number",
+                "value": 11
+              },
+              "moveType": "horizontal",
+              "useCollisions": false
+            },
+            "id": "e7a71dfc-8216-4343-a7b4-270c81002a1a"
+          }
+        ],
+        "false": []
+      },
+      "id": "68822e58-2a19-43eb-be55-44bbc72eef88"
+    },
+    {
+      "command": "EVENT_IF_ACTOR_AT_POSITION",
+      "args": {
+        "actorId": "38e79d4c-1c67-45d2-ab52-549d0cfe6696",
+        "x": {
+          "type": "number",
+          "value": 0
+        },
+        "y": {
+          "type": "number",
+          "value": 11
+        },
+        "__collapseElse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_ACTOR_MOVE_TO",
+            "args": {
+              "actorId": "$self$",
+              "x": {
+                "type": "number",
+                "value": 0
+              },
+              "y": {
+                "type": "number",
+                "value": 19
+              },
+              "moveType": "horizontal",
+              "useCollisions": false
+            },
+            "id": "e596728b-8f7e-4122-bde7-08dde5a2e1a3"
+          }
+        ],
+        "false": []
+      },
+      "id": "01dd62aa-3ae7-48d6-9cc8-4423b3a0461c"
+    }
+  ],
   "hit1Script": [],
   "hit2Script": [],
   "hit3Script": [],
-  "x": 2,
+  "x": 0,
   "y": 19,
   "_index": 0
 }

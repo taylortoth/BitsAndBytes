@@ -11,8 +11,8 @@
   "animSpeed": 15,
   "paletteId": "",
   "isPinned": false,
-  "persistent": false,
-  "collisionGroup": "",
+  "persistent": true,
+  "collisionGroup": "1",
   "prefabScriptOverrides": {},
   "symbol": "actor_1",
   "script": [
@@ -21,9 +21,11 @@
       "args": {
         "text": [
           "Oh?\nA new face... \nand such a lively\none at that.",
-          "How delightful.\nThis town could \nuse a little fresh\nblood.",
+          "How delightful ;)",
+          "This town could \nuse a little fresh\nblood.",
           "I'm Carmilla, \ndarling.Tell me...",
-          "Are you here \nlooking for \ntrouble? Or has \ntrouble already \nfound you?"
+          "Are you here \nlooking for \ntrouble? ",
+          "Or has \ntrouble already \nfound you?"
         ],
         "__section": "text",
         "avatarId": "",
@@ -35,10 +37,10 @@
         "position": "bottom",
         "clearPrevious": true,
         "showFrame": "true",
-        "speedIn": -1,
-        "speedOut": -1,
+        "speedIn": 0,
+        "speedOut": 0,
         "closeWhen": "key",
-        "closeButton": "a",
+        "closeButton": "any",
         "closeDelayTime": 0.5,
         "closeDelayFrames": 30
       },
@@ -46,11 +48,88 @@
     }
   ],
   "startScript": [],
-  "updateScript": [],
+  "updateScript": [
+    {
+      "command": "EVENT_IF_ACTOR_AT_POSITION",
+      "args": {
+        "actorId": "6b74922c-5ac0-4c71-9fee-9b6a41f60061",
+        "x": {
+          "type": "number",
+          "value": 43
+        },
+        "y": {
+          "type": "number",
+          "value": 5
+        },
+        "__collapseElse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_ACTOR_MOVE_TO",
+            "args": {
+              "actorId": "$self$",
+              "x": {
+                "type": "number",
+                "value": 33
+              },
+              "y": {
+                "type": "number",
+                "value": 5
+              },
+              "moveType": "horizontal",
+              "useCollisions": false
+            },
+            "id": "6a8f3489-9cfc-46a0-b8df-0eab3fc4fe85"
+          }
+        ],
+        "false": []
+      },
+      "id": "c847205d-1b75-42bd-8882-4b33203908a6"
+    },
+    {
+      "command": "EVENT_IF_ACTOR_AT_POSITION",
+      "args": {
+        "actorId": "6b74922c-5ac0-4c71-9fee-9b6a41f60061",
+        "x": {
+          "type": "number",
+          "value": 33
+        },
+        "y": {
+          "type": "number",
+          "value": 5
+        },
+        "__collapseElse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_ACTOR_MOVE_TO",
+            "args": {
+              "actorId": "$self$",
+              "x": {
+                "type": "number",
+                "value": 43
+              },
+              "y": {
+                "type": "number",
+                "value": 5
+              },
+              "moveType": "horizontal",
+              "useCollisions": false
+            },
+            "id": "abb51aa8-9dcc-4c18-9aa5-7c040d8860c5"
+          }
+        ],
+        "false": []
+      },
+      "id": "9eace398-08a0-40c3-bf61-94461bc473cf"
+    }
+  ],
   "hit1Script": [],
   "hit2Script": [],
   "hit3Script": [],
-  "x": 39,
+  "x": 43,
   "y": 5,
   "_index": 0
 }

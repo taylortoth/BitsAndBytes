@@ -11,8 +11,8 @@
   "animSpeed": 15,
   "paletteId": "",
   "isPinned": false,
-  "persistent": false,
-  "collisionGroup": "",
+  "persistent": true,
+  "collisionGroup": "1",
   "prefabScriptOverrides": {},
   "symbol": "actor_2",
   "script": [
@@ -21,9 +21,12 @@
       "args": {
         "text": [
           "...A newcomer.\nHow terribly \nunfortunate.",
-          "Few stay long in\nthis town. Fewer\nstill seek my\ncompany.",
-          "I am Nosferatu.\nScholar, relic...\nburden, some would\nsay.",
-          "If curiosity \nbrought you here,\ntake care it does \nnot devour you \nwhole."
+          "Few stay long in\nthis town.",
+          "Fewer\nstill seek my\ncompany.",
+          "I am Nosferatu!",
+          "Scholar, relic...\nburden, some would\nsay.",
+          "If curiosity \nbrought you here..",
+          "take care it does \nnot devour you \nwhole."
         ],
         "__section": "text",
         "avatarId": "",
@@ -35,10 +38,10 @@
         "position": "bottom",
         "clearPrevious": true,
         "showFrame": "true",
-        "speedIn": -1,
-        "speedOut": -1,
+        "speedIn": 0,
+        "speedOut": 0,
         "closeWhen": "key",
-        "closeButton": "a",
+        "closeButton": "any",
         "closeDelayTime": 0.5,
         "closeDelayFrames": 30
       },
@@ -46,7 +49,84 @@
     }
   ],
   "startScript": [],
-  "updateScript": [],
+  "updateScript": [
+    {
+      "command": "EVENT_IF_ACTOR_AT_POSITION",
+      "args": {
+        "actorId": "bb67c744-a4d7-4dd6-8ed4-66d4258a830d",
+        "x": {
+          "type": "number",
+          "value": 28
+        },
+        "y": {
+          "type": "number",
+          "value": 7
+        },
+        "__collapseElse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_ACTOR_MOVE_TO",
+            "args": {
+              "actorId": "bb67c744-a4d7-4dd6-8ed4-66d4258a830d",
+              "x": {
+                "type": "number",
+                "value": 34
+              },
+              "y": {
+                "type": "number",
+                "value": 7
+              },
+              "moveType": "horizontal",
+              "useCollisions": false
+            },
+            "id": "8bdef388-5cf7-4554-8086-24ba2c0ba8ff"
+          }
+        ],
+        "false": []
+      },
+      "id": "cecf3b22-e773-4327-a90e-708cc2fd0765"
+    },
+    {
+      "command": "EVENT_IF_ACTOR_AT_POSITION",
+      "args": {
+        "actorId": "bb67c744-a4d7-4dd6-8ed4-66d4258a830d",
+        "x": {
+          "type": "number",
+          "value": 34
+        },
+        "y": {
+          "type": "number",
+          "value": 7
+        },
+        "__collapseElse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_ACTOR_MOVE_TO",
+            "args": {
+              "actorId": "$self$",
+              "x": {
+                "type": "number",
+                "value": 28
+              },
+              "y": {
+                "type": "number",
+                "value": 7
+              },
+              "moveType": "horizontal",
+              "useCollisions": false
+            },
+            "id": "046f8441-1208-4474-b310-7408aac5d466"
+          }
+        ],
+        "false": []
+      },
+      "id": "b91e91e1-4ce7-4590-9225-ffb7b6a5012b"
+    }
+  ],
   "hit1Script": [],
   "hit2Script": [],
   "hit3Script": [],

@@ -5,6 +5,26 @@
       "id": "0",
       "name": "blood bottles",
       "symbol": "var_blood_bottles"
+    },
+    {
+      "id": "1",
+      "name": "Edward inventory",
+      "symbol": "var_edward_inventory"
+    },
+    {
+      "id": "2",
+      "name": "Carmilla inventory",
+      "symbol": "var_carmilla_inventory"
+    },
+    {
+      "id": "3",
+      "name": "Nosferatu inventory",
+      "symbol": "var_nosferatu_inventory"
+    },
+    {
+      "id": "4",
+      "name": "Allucard inventory",
+      "symbol": "var_allucard_inventory"
     }
   ]
 }

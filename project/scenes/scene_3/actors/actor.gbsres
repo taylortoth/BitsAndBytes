@@ -11,8 +11,8 @@
   "animSpeed": 15,
   "paletteId": "",
   "isPinned": false,
-  "persistent": false,
-  "collisionGroup": "",
+  "persistent": true,
+  "collisionGroup": "1",
   "prefabScriptOverrides": {},
   "symbol": "actor_0",
   "script": [
@@ -20,10 +20,11 @@
       "command": "EVENT_TEXT",
       "args": {
         "text": [
-          "...You're not \nfrom around here, \nare you?",
+          "..You're not \nfrom around here, \nare you?",
           "It's dangerous to \nwalk these streets \nalone. ",
           "Especially for \nsomeone... so\nfull of life.",
-          "I'm Edward. If you\ninsist on staying,\nbe careful who you\ntrust.",
+          "I'm Edward. It's \nmy pleasure. ",
+          "If you insist on \nstaying, be \ncareful who you \ntrust.",
           "Some of us aren't\nas harmless as we\nlook."
         ],
         "__section": "text",
@@ -36,18 +37,97 @@
         "position": "bottom",
         "clearPrevious": true,
         "showFrame": "true",
-        "speedIn": -1,
-        "speedOut": -1,
+        "speedIn": 0,
+        "speedOut": 0,
         "closeWhen": "key",
-        "closeButton": "a",
+        "closeButton": "any",
         "closeDelayTime": 0.5,
-        "closeDelayFrames": 30
+        "closeDelayFrames": 30,
+        "__collapse": false
       },
-      "id": "7e1f0321-4e39-4769-8df6-266c9c6c5fc7"
+      "id": "aad524c6-b063-4976-b492-8f134748ca1a"
     }
   ],
   "startScript": [],
-  "updateScript": [],
+  "updateScript": [
+    {
+      "command": "EVENT_IF_ACTOR_AT_POSITION",
+      "args": {
+        "actorId": "4938605a-8a21-48b8-ab91-27a4e7293a86",
+        "x": {
+          "type": "number",
+          "value": 16
+        },
+        "y": {
+          "type": "number",
+          "value": 7
+        },
+        "__collapseElse": true,
+        "__collapse": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_ACTOR_MOVE_TO",
+            "args": {
+              "actorId": "4938605a-8a21-48b8-ab91-27a4e7293a86",
+              "x": {
+                "type": "number",
+                "value": 16
+              },
+              "y": {
+                "type": "number",
+                "value": 2
+              },
+              "moveType": "horizontal",
+              "useCollisions": false
+            },
+            "id": "b6bc98ca-3bd8-448a-86a6-8bc1e4be3eda"
+          }
+        ],
+        "false": []
+      },
+      "id": "4a93c83e-1e29-44fb-b8c6-a3987e5687ed"
+    },
+    {
+      "command": "EVENT_IF_ACTOR_AT_POSITION",
+      "args": {
+        "actorId": "4938605a-8a21-48b8-ab91-27a4e7293a86",
+        "x": {
+          "type": "number",
+          "value": 16
+        },
+        "y": {
+          "type": "number",
+          "value": 2
+        },
+        "__collapseElse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_ACTOR_MOVE_TO",
+            "args": {
+              "actorId": "$self$",
+              "x": {
+                "type": "number",
+                "value": 16
+              },
+              "y": {
+                "type": "number",
+                "value": 7
+              },
+              "moveType": "horizontal",
+              "useCollisions": false
+            },
+            "id": "4a465463-943f-4e39-9d58-56071ddc5a27"
+          }
+        ],
+        "false": []
+      },
+      "id": "8b4f8c06-86a0-477f-befc-c6abbb486b97"
+    }
+  ],
   "hit1Script": [],
   "hit2Script": [],
   "hit3Script": [],
