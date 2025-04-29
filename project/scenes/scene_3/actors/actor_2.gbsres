@@ -26,9 +26,24 @@
     {
       "command": "EVENT_INC_VALUE",
       "args": {
-        "variable": "0"
+        "variable": "0",
+        "__collapse": true
       },
       "id": "821802f7-6491-4a6b-83f8-a1b5fd311981"
+    },
+    {
+      "command": "EVENT_SOUND_PLAY_EFFECT",
+      "args": {
+        "type": "0f100631-b1e6-4772-a11c-10693c548e1f",
+        "priority": "medium",
+        "pitch": 4,
+        "frequency": 200,
+        "duration": 0.5,
+        "wait": true,
+        "effect": 2,
+        "__collapse": true
+      },
+      "id": "d904780e-6a00-4a29-82a9-2658605b35ca"
     }
   ],
   "startScript": [],

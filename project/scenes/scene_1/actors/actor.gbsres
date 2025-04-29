@@ -19,16 +19,32 @@
     {
       "command": "EVENT_ACTOR_DEACTIVATE",
       "args": {
-        "actorId": "0895b625-0133-47dc-83a1-31831b9cf56b"
+        "actorId": "0895b625-0133-47dc-83a1-31831b9cf56b",
+        "__collapse": true
       },
       "id": "a4f5ef1b-85d7-4b9f-82bd-c5a6df95f75a"
     },
     {
       "command": "EVENT_INC_VALUE",
       "args": {
-        "variable": "0"
+        "variable": "0",
+        "__collapse": true
       },
       "id": "30f8c2a4-03fd-4d2e-bb6a-b61f677f6b71"
+    },
+    {
+      "command": "EVENT_SOUND_PLAY_EFFECT",
+      "args": {
+        "type": "0f100631-b1e6-4772-a11c-10693c548e1f",
+        "priority": "medium",
+        "pitch": 4,
+        "frequency": 200,
+        "duration": 0.5,
+        "wait": true,
+        "effect": 2,
+        "__collapse": true
+      },
+      "id": "9224b42b-77c3-4df8-940a-8505be3b23c0"
     }
   ],
   "startScript": [],

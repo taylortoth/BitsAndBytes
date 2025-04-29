@@ -29,6 +29,19 @@
         "variable": "0"
       },
       "id": "f9810607-d1c1-4336-82aa-24e8024d9a4c"
+    },
+    {
+      "command": "EVENT_SOUND_PLAY_EFFECT",
+      "args": {
+        "type": "0f100631-b1e6-4772-a11c-10693c548e1f",
+        "priority": "medium",
+        "pitch": 4,
+        "frequency": 200,
+        "duration": 0.5,
+        "wait": true,
+        "effect": 2
+      },
+      "id": "709b23c1-2c66-40b8-a1b0-3cc7cc24cfc4"
     }
   ],
   "startScript": [],
